@@ -1,7 +1,7 @@
 import React from "react";
 import { LanternIcon } from "@/components/ui/LanternIcon";
 
-export default function Navbar() {
+export const Navbar = () => {
   return (
     <nav className="z-50 w-full h-20 border-b border-white/5 backdrop-blur-xl flex items-center justify-between px-6 md:px-12 transition-all duration-300">
       {/* Logo Section */}
