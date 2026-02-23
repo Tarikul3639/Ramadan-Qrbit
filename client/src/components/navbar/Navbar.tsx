@@ -1,6 +1,5 @@
 import React from "react";
 import { LanternIcon } from "@/components/ui/LanternIcon";
-import { Clock, User, Settings } from "lucide-react";
 
 export default function Navbar() {
   return (

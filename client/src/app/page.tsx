@@ -1,5 +1,7 @@
 import Navbar from "@/components/navbar/Navbar";
+import { Footer } from "@/components/footer/Footer";
 import { OrbitCountdown } from "@/components/ui/OrbitCountdown";
+import { Today } from "@/components/ui/Today";
 
 export default function Home() {
   return (
@@ -12,19 +14,23 @@ export default function Home() {
         <OrbitCountdown />
 
         {/* Date */}
-        <div className="mt-16 text-center space-y-4">
-          <h2 className="font-serif text-lg md:text-xl font-light tracking-[0.2em] text-white">
+        <div className="mt-4 sm:mt-8 md:mt-10 lg:mt-16 text-center space-y-2 sm:space-y-4">
+          <h2 className="font-serif text-base sm:text-lg md:text-xl font-light tracking-[0.2em] text-white">
             14 RAMADAN 1445
           </h2>
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-2 sm:gap-4">
             <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-primary/40"></div>
-            <p className="text-xs uppercase tracking-[0.5em] text-primary font-bold">
+            <p className="text-[8px] sm:text-xs uppercase tracking-[0.5em] text-primary font-bold">
               Monday, 25 March 2024
             </p>
             <div className="h-[1px] w-12 bg-gradient-to-l from-transparent to-primary/40"></div>
           </div>
         </div>
       </div>
+      <div className="w-full max-w-5xl">
+        <Today />
+      </div>
+      <Footer />
     </main>
   );
 }

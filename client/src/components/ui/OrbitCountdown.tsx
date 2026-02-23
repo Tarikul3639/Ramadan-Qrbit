@@ -9,7 +9,7 @@ export const OrbitCountdown = () => {
 
   return (
     /* Container Sizes: XS: 220px | SM: 250px | MD: 300px | LG+: 320px */
-    <div className="relative h-[220px] w-[220px] sm:h-[250px] sm:w-[250px] md:h-[300px] md:w-[300px] lg:h-[320px] lg:w-[320px] flex items-center justify-center transition-all duration-500">
+    <div className="relative h-[250px] w-[250px] sm:h-[280px] sm:w-[280px] md:h-[320px] md:w-[320px] lg:h-[320px] lg:w-[320px] flex items-center justify-center transition-all duration-500">
       
       {/* Background Outer Ring - Scale disesuaikan agar tidak terlalu jauh */}
       <div className="absolute inset-0 rounded-full border border-primary/10 scale-[1.05]"></div>
@@ -34,7 +34,7 @@ export const OrbitCountdown = () => {
           cx="50" cy="50" r={radius}
           fill="transparent"
           stroke="currentColor"
-          strokeWidth="2.5"
+          strokeWidth="3.5"
           strokeDasharray={circumference}
           strokeDashoffset={offset}
           strokeLinecap="round"
@@ -45,11 +45,11 @@ export const OrbitCountdown = () => {
           <circle
             cx={50 + radius}
             cy="50"
-            r="2.5"
+            r="3"
             fill="#D4AF37"
             style={{ filter: "drop-shadow(0 0 6px rgba(212, 175, 55, 1))" }}
           />
-          <circle cx={50 + radius} cy="50" r="1" fill="white" />
+          <circle cx={50 + radius} cy="50" r="1.5" fill="white" />
         </g>
       </svg>
 
