@@ -1,65 +1,30 @@
-import Image from "next/image";
+import Navbar from "@/components/navbar/Navbar";
+import { OrbitCountdown } from "@/components/ui/OrbitCountdown";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="flex min-h-screen max-w-7xl flex-col items-center ">
+      <div className="fixed inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2280%22%20height%3D%2280%22%20viewBox%3D%220%200%2080%2080%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%27M40%200l20%2020-20%2020-20-20L40%200zm0%2080l20-20-20-20-20%2020%2020%2080zM0%2040l20-20%2020%2020-20%2020L0%2040zm80%2040l-20-15-20%2015%2020%2015%2020-15z%27%20fill%3D%27%23D4AF37%27%20fill-opacity%3D%270.02%27%20fill-rule%3D%27evenodd%27/%3E%3C/svg%3E')] bg-no-repeat bg-center bg-cover pointer-events-none"></div>
+      <div className="w-full mx-auto max-w-3xl">
+        <Navbar />
+      </div>
+      <div className="flex flex-col w-full flex items-center justify-center mt-12 mb-8 p-4">
+        <OrbitCountdown />
+
+        {/* Date */}
+        <div className="mt-16 text-center space-y-4">
+          <h2 className="font-serif text-lg md:text-xl font-light tracking-[0.2em] text-white">
+            14 RAMADAN 1445
+          </h2>
+          <div className="flex items-center justify-center gap-4">
+            <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-primary/40"></div>
+            <p className="text-xs uppercase tracking-[0.5em] text-primary font-bold">
+              Monday, 25 March 2024
+            </p>
+            <div className="h-[1px] w-12 bg-gradient-to-l from-transparent to-primary/40"></div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </div>
+    </main>
   );
 }
