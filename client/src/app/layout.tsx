@@ -14,7 +14,17 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ramadan Orbit",
-  description: "A web application to help Muslims around the world track their fasting and prayer times during Ramadan.",
+  description:
+    "A web application to help Muslims around the world track their fasting and prayer times during Ramadan.",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Ramadan Orbit",
+  },
+  formatDetection: {
+    telephone: false,
+  },
 };
 
 export default function RootLayout({

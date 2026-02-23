@@ -44,16 +44,12 @@ export default function Navbar() {
 
           {/* Time: Fokus ke angka dengan icon yang minimalis */}
           <div className="flex items-center gap-2">
-            <Clock
-              size={14}
-              className="text-slate-500 group-hover:text-primary transition-colors duration-300"
-            />
-            <span className="text-sm md:text-lg font-medium text-white tracking-[0.1em] font-mono leading-none">
+            <span className="text-sm md:text-lg font-medium text-yellow-50 tracking-[0.1em] font-mono leading-none">
               16:14<span className="text-primary/50">:</span>02
             </span>
 
             {/* Penanda AM/PM Kecil */}
-            <span className="text-[8px] md:text-[10px] font-bold text-slate-500 uppercase self-end mb-[1px]">
+            <span className="text-[8px] md:text-[10px] font-bold text-primary/80 uppercase self-end mb-[1px]">
               PM
             </span>
           </div>
