@@ -11,7 +11,15 @@ export interface DisplayDayType extends DayType {
 export function useRamadanData(district: string) {
   return useMemo(() => {
     const districtData = data[district] || [];
-    const todayISO = new Date().toISOString().split("T")[0];
+    const today = new Date();
+    const todayISO =
+      today.getFullYear() +
+      "-" +
+      String(today.getMonth() + 1).padStart(2, "0") +
+      "-" +
+      String(today.getDate()).padStart(2, "0");
+
+    // console.log(todayISO);
 
     const enrichedData: DisplayDayType[] = districtData.map((item) => {
       let status: "past" | "today" | "upcoming" = "upcoming";

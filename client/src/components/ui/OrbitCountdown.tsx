@@ -104,7 +104,11 @@ export const OrbitCountdown = ({ today }: TodayProps) => {
       // }
       if (iftarTimeMs && nowMs <= iftarTimeMs && now.getHours() <= 0) {
         setCountdown(
-          calculateCountdown(today.fajr, today.iftar, "Time Until Fajr"),
+          calculateCountdown("00:00", today.iftar, "Time Until Fajr"),
+        );
+      } else {
+        setCountdown(
+          calculateCountdown("00:00", today.iftar, "Time Until Fajr"),
         );
       }
     };
