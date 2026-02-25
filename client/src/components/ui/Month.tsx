@@ -1,5 +1,6 @@
 "use client";
 import { MapPin, CircleCheck } from "lucide-react";
+import { DisplayDayType } from "@/hooks/useRamadanData";
 
 //Tabs
 import { motion, LayoutGroup } from "framer-motion";
@@ -48,7 +49,11 @@ export default function Tabs() {
   );
 }
 
-export const Month = () => {
+interface MonthType {
+  days: DisplayDayType[];
+}
+
+export const Month = (days: MonthType) => {
   return (
     <div className="w-full mx-auto mt-6 px-2 sm:px-4 relative group">
       <div className="relative flex flex-col w-full rounded-2xl border border-white/10 bg-white/2 backdrop-blur-2xl p-5 sm:p-8 shadow-sm">
