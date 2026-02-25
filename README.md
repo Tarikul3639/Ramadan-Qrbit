@@ -17,10 +17,13 @@ Ramadan Orbit is a web app designed to enhance your Ramadan experience by provid
 
 ## 🖼️ Screenshots
 
-<img src="./image/image_1.png" alt="Ramadan Orbit Screenshot 1" width="300" />  
-<img src="./image/image_2.png" alt="Ramadan Orbit Screenshot 2" width="300" />  
-<img src="./image/image_3.png" alt="Ramadan Orbit Screenshot 3" width="300" />  
-<img src="./image/image_4.png" alt="Ramadan Orbit Screenshot 4" width="300" />
+| Screenshot 1 | Screenshot 2 |
+|--------------|--------------|
+| <a href="./image/image_1.png"><img src="./image/image_1.png" alt="Screenshot 1" width="100%" /></a> | <a href="./image/image_2.png"><img src="./image/image_2.png" alt="Screenshot 2" width="100%" /></a> |
+
+| Screenshot 3 | Screenshot 4 |
+|--------------|--------------|
+| <a href="./image/image_3.png"><img src="./image/image_3.png" alt="Screenshot 3" width="100%" /></a> | <a href="./image/image_4.png"><img src="./image/image_4.png" alt="Screenshot 4" width="100%" /></a> |
 
 ---
 
