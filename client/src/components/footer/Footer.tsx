@@ -5,7 +5,7 @@ import { Heart } from "lucide-react";
 export const Footer = () => {
   return (
     <footer className="w-full py-12 px-6 mt-20 border-t border-white/5 backdrop-blur-xl">
-      <div className="max-w-7xl mx-auto flex flex-col items-center gap-8">
+      <div className="max-w-7xl mx-auto flex flex-col items-center gap-3">
         
         {/* Logo & Brand Section */}
         <div className="flex items-center gap-4 group">
@@ -30,7 +30,7 @@ export const Footer = () => {
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-1.5 text-[9px] text-slate-500 tracking-[0.15em] uppercase">
             <span className="opacity-70">© 2026 Crafted with</span>
             <Heart size={10} className="text-primary/60 fill-primary/20 animate-bounce" style={{ animationDuration: '3s' }} />
-            <span className="opacity-70">by</span>
+            {/* <span className="opacity-70">by</span> */}
             <a 
               href="https://tarikul-islam.me" 
               target="_blank" 
