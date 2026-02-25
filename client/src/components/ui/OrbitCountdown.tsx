@@ -68,56 +68,54 @@ export const OrbitCountdown = ({ today }: TodayProps) => {
 
   useEffect(() => {
     if (!today) return;
-    const now = new Date();
-    const nowMs = now.getTime();
-
-    // Sehri
-    const [sehriHour, sehriMinute] = today.sehri.split(":").map(Number);
-    const sehriDate = new Date();
-    sehriDate.setHours(sehriHour, sehriMinute, 0, 0);
-    const sehriTimeMs = sehriDate.getTime();
-
-    // Fajr
-    // const [fajrHour, fajrMinute] = today.fajr.split(":").map(Number);
-    // const fajrDate = new Date();
-    // fajrDate.setHours(fajrHour, fajrMinute, 0, 0);
-    // const fajrTimeMs = sehriDate.getTime();
-
-    // Iftar
-    const [iftarHour, iftarMinute] = today.iftar.split(":").map(Number);
-    const iftarDate = new Date();
-    iftarDate.setHours(iftarHour, iftarMinute, 0, 0);
-    const iftarTimeMs = iftarDate.getTime();
-
-    // console.log(nowMs, sehriTimeMs); // ekhon duto number hobe
 
     const update = () => {
-      if (sehriTimeMs && nowMs <= sehriTimeMs && now.getHours() >= 0) {
+      const now = new Date();
+      const nowMs = now.getTime();
+
+      // Parse Sehri
+      const [sehriHour, sehriMinute] = today.sehri.split(":").map(Number);
+      const sehriDate = new Date();
+      sehriDate.setHours(sehriHour, sehriMinute, 0, 0);
+      const sehriTimeMs = sehriDate.getTime();
+
+      // Parse Fajr
+      const [fajrHour, fajrMinute] = today.fajr.split(":").map(Number);
+      const fajrDate = new Date();
+      fajrDate.setHours(fajrHour, fajrMinute, 0, 0);
+      const fajrTimeMs = fajrDate.getTime();
+
+      // Parse Iftar
+      const [iftarHour, iftarMinute] = today.iftar.split(":").map(Number);
+      const iftarDate = new Date();
+      iftarDate.setHours(iftarHour, iftarMinute, 0, 0);
+      const iftarTimeMs = iftarDate.getTime();
+
+      // Determine countdown
+      if (nowMs < sehriTimeMs) {
+        setCountdown(
+          calculateCountdown("00:00", today.sehri, "Time Until Sehri"),
+        );
+      } else if (nowMs >= sehriTimeMs && nowMs < fajrTimeMs) {
+        setCountdown(
+          calculateCountdown(today.sehri, today.fajr, "Time Until Fajr"),
+        );
+      } else if (nowMs >= fajrTimeMs && nowMs < iftarTimeMs) {
+        setCountdown(
+          calculateCountdown(today.fajr, today.iftar, "Time Until Iftar"),
+        );
+      } else {
+        // After Iftar, countdown till next day's Sehri
         setCountdown(
           calculateCountdown("00:00", today.sehri, "Time Until Sehri"),
         );
       }
-      // if (fajrTimeMs && nowMs <= fajrTimeMs && now.getHours() >= 0) {
-      //   setCountdown(
-      //     calculateCountdown(today.sehri, today.fajr, "Time Until Fajr"),
-      //   );
-      // }
-      if (iftarTimeMs && nowMs <= iftarTimeMs && now.getHours() <= 0) {
-        setCountdown(
-          calculateCountdown("00:00", today.iftar, "Time Until Fajr"),
-        );
-      } else {
-        setCountdown(
-          calculateCountdown("00:00", today.iftar, "Time Until Fajr"),
-        );
-      }
     };
 
-    update(); // initial call
+    update();
     const interval = setInterval(update, 1000);
-
     return () => clearInterval(interval);
-  }, [today?.iftar]);
+  }, [today]);
 
   const { hours, minutes, seconds, message, progress } = countdown;
 

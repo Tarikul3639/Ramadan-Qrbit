@@ -7,6 +7,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-19",
       date_display: "19 Feb 2026",
       sehri: "05:12",
+      fajr: "05:15",
       iftar: "17:58",
     },
     {
@@ -14,6 +15,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-20",
       date_display: "20 Feb 2026",
       sehri: "05:11",
+      fajr: "05:14",
       iftar: "17:58",
     },
     {
@@ -21,6 +23,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-21",
       date_display: "21 Feb 2026",
       sehri: "05:11",
+      fajr: "05:14",
       iftar: "17:59",
     },
     {
@@ -28,6 +31,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-22",
       date_display: "22 Feb 2026",
       sehri: "05:10",
+      fajr: "05:13",
       iftar: "17:59",
     },
     {
@@ -35,6 +39,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-23",
       date_display: "23 Feb 2026",
       sehri: "05:09",
+      fajr: "05:12",
       iftar: "18:00",
     },
     {
@@ -42,6 +47,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-24",
       date_display: "24 Feb 2026",
       sehri: "05:08",
+      fajr: "05:11",
       iftar: "18:00",
     },
     {
@@ -49,6 +55,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-25",
       date_display: "25 Feb 2026",
       sehri: "05:08",
+      fajr: "05:11",
       iftar: "18:01",
     },
     {
@@ -56,6 +63,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-26",
       date_display: "26 Feb 2026",
       sehri: "05:07",
+      fajr: "05:10",
       iftar: "18:01",
     },
     {
@@ -63,6 +71,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-27",
       date_display: "27 Feb 2026",
       sehri: "05:06",
+      fajr: "05:09",
       iftar: "18:02",
     },
     {
@@ -70,6 +79,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-28",
       date_display: "28 Feb 2026",
       sehri: "05:05",
+      fajr: "05:08",
       iftar: "18:02",
     },
     {
@@ -77,6 +87,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-01",
       date_display: "01 Mar 2026",
       sehri: "05:05",
+      fajr: "05:08",
       iftar: "18:03",
     },
     {
@@ -84,6 +95,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-02",
       date_display: "02 Mar 2026",
       sehri: "05:04",
+      fajr: "05:07",
       iftar: "18:03",
     },
     {
@@ -91,6 +103,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-03",
       date_display: "03 Mar 2026",
       sehri: "05:03",
+      fajr: "05:06",
       iftar: "18:04",
     },
     {
@@ -98,6 +111,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-04",
       date_display: "04 Mar 2026",
       sehri: "05:02",
+      fajr: "05:05",
       iftar: "18:04",
     },
     {
@@ -105,6 +119,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-05",
       date_display: "05 Mar 2026",
       sehri: "05:01",
+      fajr: "05:04",
       iftar: "18:05",
     },
     {
@@ -112,6 +127,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-06",
       date_display: "06 Mar 2026",
       sehri: "05:00",
+      fajr: "05:03",
       iftar: "18:05",
     },
     {
@@ -119,6 +135,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-07",
       date_display: "07 Mar 2026",
       sehri: "04:59",
+      fajr: "05:02",
       iftar: "18:06",
     },
     {
@@ -126,6 +143,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-08",
       date_display: "08 Mar 2026",
       sehri: "04:58",
+      fajr: "05:01",
       iftar: "18:06",
     },
     {
@@ -133,6 +151,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-09",
       date_display: "09 Mar 2026",
       sehri: "04:57",
+      fajr: "05:00",
       iftar: "18:07",
     },
     {
@@ -140,6 +159,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-10",
       date_display: "10 Mar 2026",
       sehri: "04:57",
+      fajr: "04:59",
       iftar: "18:07",
     },
     {
@@ -147,6 +167,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-11",
       date_display: "11 Mar 2026",
       sehri: "04:56",
+      fajr: "04:58",
       iftar: "18:07",
     },
     {
@@ -154,6 +175,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-12",
       date_display: "12 Mar 2026",
       sehri: "04:55",
+      fajr: "04:57",
       iftar: "18:08",
     },
     {
@@ -161,6 +183,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-13",
       date_display: "13 Mar 2026",
       sehri: "04:54",
+      fajr: "04:57",
       iftar: "18:08",
     },
     {
@@ -168,6 +191,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-14",
       date_display: "14 Mar 2026",
       sehri: "04:53",
+      fajr: "04:56",
       iftar: "18:09",
     },
     {
@@ -175,6 +199,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-15",
       date_display: "15 Mar 2026",
       sehri: "04:52",
+      fajr: "04:55",
       iftar: "18:09",
     },
     {
@@ -182,6 +207,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-16",
       date_display: "16 Mar 2026",
       sehri: "04:51",
+      fajr: "04:54",
       iftar: "18:10",
     },
     {
@@ -189,6 +215,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-17",
       date_display: "17 Mar 2026",
       sehri: "04:50",
+      fajr: "04:53",
       iftar: "18:10",
     },
     {
@@ -196,6 +223,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-18",
       date_display: "18 Mar 2026",
       sehri: "04:49",
+      fajr: "04:52",
       iftar: "18:10",
     },
     {
@@ -203,6 +231,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-19",
       date_display: "19 Mar 2026",
       sehri: "04:48",
+      fajr: "04:50",
       iftar: "18:11",
     },
     {
@@ -210,6 +239,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-20",
       date_display: "20 Mar 2026",
       sehri: "04:47",
+      fajr: "04:49",
       iftar: "18:11",
     },
   ],
@@ -219,6 +249,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-19",
       date_display: "19 Feb 2026",
       sehri: "05:11",
+      fajr: "05:13",
       iftar: "17:56",
     },
     {
@@ -226,6 +257,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-20",
       date_display: "20 Feb 2026",
       sehri: "05:10",
+      fajr: "05:13",
       iftar: "17:57",
     },
     {
@@ -233,6 +265,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-21",
       date_display: "21 Feb 2026",
       sehri: "05:10",
+      fajr: "05:12",
       iftar: "17:57",
     },
     {
@@ -240,6 +273,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-22",
       date_display: "22 Feb 2026",
       sehri: "05:09",
+      fajr: "05:11",
       iftar: "17:58",
     },
     {
@@ -247,6 +281,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-23",
       date_display: "23 Feb 2026",
       sehri: "05:08",
+      fajr: "05:10",
       iftar: "17:58",
     },
     {
@@ -254,6 +289,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-24",
       date_display: "24 Feb 2026",
       sehri: "05:08",
+      fajr: "05:10",
       iftar: "17:59",
     },
     {
@@ -261,6 +297,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-25",
       date_display: "25 Feb 2026",
       sehri: "05:07",
+      fajr: "05:09",
       iftar: "18:00",
     },
     {
@@ -268,6 +305,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-26",
       date_display: "26 Feb 2026",
       sehri: "05:06",
+      fajr: "05:08",
       iftar: "18:00",
     },
     {
@@ -275,6 +313,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-27",
       date_display: "27 Feb 2026",
       sehri: "05:05",
+      fajr: "05:07",
       iftar: "18:00",
     },
     {
@@ -282,6 +321,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-28",
       date_display: "28 Feb 2026",
       sehri: "05:04",
+      fajr: "05:07",
       iftar: "18:01",
     },
     {
@@ -289,6 +329,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-01",
       date_display: "01 Mar 2026",
       sehri: "05:04",
+      fajr: "05:06",
       iftar: "18:01",
     },
     {
@@ -296,6 +337,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-02",
       date_display: "02 Mar 2026",
       sehri: "05:03",
+      fajr: "05:05",
       iftar: "18:02",
     },
     {
@@ -303,6 +345,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-03",
       date_display: "03 Mar 2026",
       sehri: "05:02",
+      fajr: "05:04",
       iftar: "18:02",
     },
     {
@@ -310,6 +353,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-04",
       date_display: "04 Mar 2026",
       sehri: "05:01",
+      fajr: "05:03",
       iftar: "18:03",
     },
     {
@@ -317,6 +361,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-05",
       date_display: "05 Mar 2026",
       sehri: "05:00",
+      fajr: "05:02",
       iftar: "18:03",
     },
     {
@@ -324,6 +369,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-06",
       date_display: "06 Mar 2026",
       sehri: "04:59",
+      fajr: "05:01",
       iftar: "18:04",
     },
     {
@@ -331,6 +377,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-07",
       date_display: "07 Mar 2026",
       sehri: "04:58",
+      fajr: "05:01",
       iftar: "18:04",
     },
     {
@@ -338,6 +385,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-08",
       date_display: "08 Mar 2026",
       sehri: "04:57",
+      fajr: "05:00",
       iftar: "18:05",
     },
     {
@@ -345,6 +393,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-09",
       date_display: "09 Mar 2026",
       sehri: "04:57",
+      fajr: "04:59",
       iftar: "18:05",
     },
     {
@@ -352,6 +401,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-10",
       date_display: "10 Mar 2026",
       sehri: "04:56",
+      fajr: "04:58",
       iftar: "18:05",
     },
     {
@@ -359,6 +409,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-11",
       date_display: "11 Mar 2026",
       sehri: "04:55",
+      fajr: "04:57",
       iftar: "18:06",
     },
     {
@@ -366,6 +417,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-12",
       date_display: "12 Mar 2026",
       sehri: "04:54",
+      fajr: "04:56",
       iftar: "18:06",
     },
     {
@@ -373,6 +425,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-13",
       date_display: "13 Mar 2026",
       sehri: "04:53",
+      fajr: "04:55",
       iftar: "18:07",
     },
     {
@@ -380,6 +433,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-14",
       date_display: "14 Mar 2026",
       sehri: "04:52",
+      fajr: "04:54",
       iftar: "18:07",
     },
     {
@@ -387,6 +441,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-15",
       date_display: "15 Mar 2026",
       sehri: "04:51",
+      fajr: "04:53",
       iftar: "18:08",
     },
     {
@@ -394,6 +449,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-16",
       date_display: "16 Mar 2026",
       sehri: "04:50",
+      fajr: "04:52",
       iftar: "18:08",
     },
     {
@@ -401,6 +457,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-17",
       date_display: "17 Mar 2026",
       sehri: "04:49",
+      fajr: "04:51",
       iftar: "18:08",
     },
     {
@@ -408,6 +465,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-18",
       date_display: "18 Mar 2026",
       sehri: "04:48",
+      fajr: "04:50",
       iftar: "18:09",
     },
     {
@@ -415,6 +473,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-19",
       date_display: "19 Mar 2026",
       sehri: "04:47",
+      fajr: "04:49",
       iftar: "18:09",
     },
     {
@@ -422,6 +481,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-20",
       date_display: "20 Mar 2026",
       sehri: "04:46",
+      fajr: "04:48",
       iftar: "18:10",
     },
   ],
@@ -431,6 +491,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-19",
       date_display: "19 Feb 2026",
       sehri: "05:09",
+      fajr: "05:13",
       iftar: "17:55",
     },
     {
@@ -438,6 +499,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-20",
       date_display: "20 Feb 2026",
       sehri: "05:09",
+      fajr: "05:12",
       iftar: "17:55",
     },
     {
@@ -445,6 +507,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-21",
       date_display: "21 Feb 2026",
       sehri: "05:08",
+      fajr: "05:12",
       iftar: "17:56",
     },
     {
@@ -452,6 +515,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-22",
       date_display: "22 Feb 2026",
       sehri: "05:07",
+      fajr: "05:11",
       iftar: "17:57",
     },
     {
@@ -459,6 +523,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-23",
       date_display: "23 Feb 2026",
       sehri: "05:06",
+      fajr: "05:10",
       iftar: "17:57",
     },
     {
@@ -466,6 +531,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-24",
       date_display: "24 Feb 2026",
       sehri: "05:06",
+      fajr: "05:09",
       iftar: "17:58",
     },
     {
@@ -473,6 +539,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-25",
       date_display: "25 Feb 2026",
       sehri: "05:05",
+      fajr: "05:09",
       iftar: "17:58",
     },
     {
@@ -480,6 +547,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-26",
       date_display: "26 Feb 2026",
       sehri: "05:04",
+      fajr: "05:08",
       iftar: "17:59",
     },
     {
@@ -487,6 +555,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-27",
       date_display: "27 Feb 2026",
       sehri: "05:03",
+      fajr: "05:07",
       iftar: "17:59",
     },
     {
@@ -494,6 +563,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-28",
       date_display: "28 Feb 2026",
       sehri: "05:02",
+      fajr: "05:06",
       iftar: "18:00",
     },
     {
@@ -501,6 +571,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-01",
       date_display: "01 Mar 2026",
       sehri: "05:02",
+      fajr: "05:05",
       iftar: "18:00",
     },
     {
@@ -508,6 +579,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-02",
       date_display: "02 Mar 2026",
       sehri: "05:01",
+      fajr: "05:04",
       iftar: "18:01",
     },
     {
@@ -515,6 +587,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-03",
       date_display: "03 Mar 2026",
       sehri: "05:00",
+      fajr: "05:03",
       iftar: "18:01",
     },
     {
@@ -522,6 +595,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-04",
       date_display: "04 Mar 2026",
       sehri: "04:59",
+      fajr: "05:03",
       iftar: "18:02",
     },
     {
@@ -529,6 +603,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-05",
       date_display: "05 Mar 2026",
       sehri: "04:58",
+      fajr: "05:02",
       iftar: "18:02",
     },
     {
@@ -536,6 +611,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-06",
       date_display: "06 Mar 2026",
       sehri: "04:57",
+      fajr: "05:01",
       iftar: "18:03",
     },
     {
@@ -543,6 +619,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-07",
       date_display: "07 Mar 2026",
       sehri: "04:56",
+      fajr: "05:00",
       iftar: "18:03",
     },
     {
@@ -550,6 +627,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-08",
       date_display: "08 Mar 2026",
       sehri: "04:55",
+      fajr: "04:59",
       iftar: "18:04",
     },
     {
@@ -557,6 +635,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-09",
       date_display: "09 Mar 2026",
       sehri: "04:54",
+      fajr: "04:58",
       iftar: "18:04",
     },
     {
@@ -564,6 +643,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-10",
       date_display: "10 Mar 2026",
       sehri: "04:53",
+      fajr: "04:57",
       iftar: "18:05",
     },
     {
@@ -571,6 +651,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-11",
       date_display: "11 Mar 2026",
       sehri: "04:52",
+      fajr: "04:56",
       iftar: "18:05",
     },
     {
@@ -578,6 +659,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-12",
       date_display: "12 Mar 2026",
       sehri: "04:51",
+      fajr: "04:55",
       iftar: "18:06",
     },
     {
@@ -585,6 +667,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-13",
       date_display: "13 Mar 2026",
       sehri: "04:50",
+      fajr: "04:54",
       iftar: "18:06",
     },
     {
@@ -592,6 +675,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-14",
       date_display: "14 Mar 2026",
       sehri: "04:49",
+      fajr: "04:53",
       iftar: "18:06",
     },
     {
@@ -599,6 +683,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-15",
       date_display: "15 Mar 2026",
       sehri: "04:48",
+      fajr: "04:52",
       iftar: "18:07",
     },
     {
@@ -606,6 +691,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-16",
       date_display: "16 Mar 2026",
       sehri: "04:47",
+      fajr: "04:51",
       iftar: "18:07",
     },
     {
@@ -613,6 +699,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-17",
       date_display: "17 Mar 2026",
       sehri: "04:46",
+      fajr: "04:50",
       iftar: "18:08",
     },
     {
@@ -620,6 +707,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-18",
       date_display: "18 Mar 2026",
       sehri: "04:45",
+      fajr: "04:49",
       iftar: "18:08",
     },
     {
@@ -627,6 +715,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-19",
       date_display: "19 Mar 2026",
       sehri: "04:44",
+      fajr: "04:48",
       iftar: "18:09",
     },
     {
@@ -634,6 +723,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-20",
       date_display: "20 Mar 2026",
       sehri: "04:43",
+      fajr: "04:47",
       iftar: "18:09",
     },
   ],
@@ -643,6 +733,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-19",
       date_display: "19 Feb 2026",
       sehri: "05:11",
+      fajr: "05:14",
       iftar: "17:57",
     },
     {
@@ -650,6 +741,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-20",
       date_display: "20 Feb 2026",
       sehri: "05:11",
+      fajr: "05:14",
       iftar: "17:58",
     },
     {
@@ -657,6 +749,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-21",
       date_display: "21 Feb 2026",
       sehri: "05:10",
+      fajr: "05:13",
       iftar: "17:58",
     },
     {
@@ -664,6 +757,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-22",
       date_display: "22 Feb 2026",
       sehri: "05:09",
+      fajr: "05:12",
       iftar: "17:59",
     },
     {
@@ -671,6 +765,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-23",
       date_display: "23 Feb 2026",
       sehri: "05:09",
+      fajr: "05:12",
       iftar: "17:59",
     },
     {
@@ -678,6 +773,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-24",
       date_display: "24 Feb 2026",
       sehri: "05:08",
+      fajr: "05:11",
       iftar: "18:00",
     },
     {
@@ -685,6 +781,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-25",
       date_display: "25 Feb 2026",
       sehri: "05:07",
+      fajr: "05:10",
       iftar: "18:00",
     },
     {
@@ -692,6 +789,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-26",
       date_display: "26 Feb 2026",
       sehri: "05:06",
+      fajr: "05:09",
       iftar: "18:01",
     },
     {
@@ -699,6 +797,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-27",
       date_display: "27 Feb 2026",
       sehri: "05:05",
+      fajr: "05:09",
       iftar: "18:01",
     },
     {
@@ -706,6 +805,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-28",
       date_display: "28 Feb 2026",
       sehri: "05:05",
+      fajr: "05:08",
       iftar: "18:02",
     },
     {
@@ -713,6 +813,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-01",
       date_display: "01 Mar 2026",
       sehri: "05:04",
+      fajr: "05:07",
       iftar: "18:02",
     },
     {
@@ -720,6 +821,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-02",
       date_display: "02 Mar 2026",
       sehri: "05:03",
+      fajr: "05:06",
       iftar: "18:03",
     },
     {
@@ -727,6 +829,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-03",
       date_display: "03 Mar 2026",
       sehri: "05:02",
+      fajr: "05:05",
       iftar: "18:03",
     },
     {
@@ -734,6 +837,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-04",
       date_display: "04 Mar 2026",
       sehri: "05:01",
+      fajr: "05:04",
       iftar: "18:04",
     },
     {
@@ -741,6 +845,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-05",
       date_display: "05 Mar 2026",
       sehri: "05:00",
+      fajr: "05:03",
       iftar: "18:04",
     },
     {
@@ -748,6 +853,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-06",
       date_display: "06 Mar 2026",
       sehri: "04:59",
+      fajr: "05:03",
       iftar: "18:05",
     },
     {
@@ -755,6 +861,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-07",
       date_display: "07 Mar 2026",
       sehri: "04:58",
+      fajr: "05:02",
       iftar: "18:05",
     },
     {
@@ -762,6 +869,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-08",
       date_display: "08 Mar 2026",
       sehri: "04:58",
+      fajr: "05:01",
       iftar: "18:06",
     },
     {
@@ -769,6 +877,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-09",
       date_display: "09 Mar 2026",
       sehri: "04:57",
+      fajr: "05:00",
       iftar: "18:06",
     },
     {
@@ -776,6 +885,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-10",
       date_display: "10 Mar 2026",
       sehri: "04:56",
+      fajr: "04:59",
       iftar: "18:06",
     },
     {
@@ -783,6 +893,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-11",
       date_display: "11 Mar 2026",
       sehri: "04:55",
+      fajr: "04:58",
       iftar: "18:07",
     },
     {
@@ -790,6 +901,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-12",
       date_display: "12 Mar 2026",
       sehri: "04:54",
+      fajr: "04:57",
       iftar: "18:07",
     },
     {
@@ -797,6 +909,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-13",
       date_display: "13 Mar 2026",
       sehri: "04:53",
+      fajr: "04:56",
       iftar: "18:08",
     },
     {
@@ -804,6 +917,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-14",
       date_display: "14 Mar 2026",
       sehri: "04:52",
+      fajr: "04:55",
       iftar: "18:08",
     },
     {
@@ -811,6 +925,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-15",
       date_display: "15 Mar 2026",
       sehri: "04:51",
+      fajr: "04:54",
       iftar: "18:09",
     },
     {
@@ -818,6 +933,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-16",
       date_display: "16 Mar 2026",
       sehri: "04:50",
+      fajr: "04:53",
       iftar: "18:09",
     },
     {
@@ -825,6 +941,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-17",
       date_display: "17 Mar 2026",
       sehri: "04:49",
+      fajr: "04:52",
       iftar: "18:09",
     },
     {
@@ -832,6 +949,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-18",
       date_display: "18 Mar 2026",
       sehri: "04:48",
+      fajr: "04:51",
       iftar: "18:10",
     },
     {
@@ -839,6 +957,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-19",
       date_display: "19 Mar 2026",
       sehri: "04:47",
+      fajr: "04:50",
       iftar: "18:10",
     },
     {
@@ -846,6 +965,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-20",
       date_display: "20 Mar 2026",
       sehri: "04:46",
+      fajr: "04:49",
       iftar: "18:11",
     },
   ],
@@ -855,6 +975,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-19",
       date_display: "19 Feb 2026",
       sehri: "05:13",
+      fajr: "05:16",
       iftar: "18:00",
     },
     {
@@ -862,6 +983,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-20",
       date_display: "20 Feb 2026",
       sehri: "05:13",
+      fajr: "05:15",
       iftar: "18:00",
     },
     {
@@ -869,6 +991,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-21",
       date_display: "21 Feb 2026",
       sehri: "05:12",
+      fajr: "05:15",
       iftar: "18:01",
     },
     {
@@ -876,6 +999,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-22",
       date_display: "22 Feb 2026",
       sehri: "05:11",
+      fajr: "05:14",
       iftar: "18:01",
     },
     {
@@ -883,6 +1007,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-23",
       date_display: "23 Feb 2026",
       sehri: "05:11",
+      fajr: "05:12",
       iftar: "18:02",
     },
     {
@@ -890,6 +1015,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-24",
       date_display: "24 Feb 2026",
       sehri: "05:10",
+      fajr: "05:13",
       iftar: "18:02",
     },
     {
@@ -897,6 +1023,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-25",
       date_display: "25 Feb 2026",
       sehri: "05:09",
+      fajr: "05:13",
       iftar: "18:03",
     },
     {
@@ -904,6 +1031,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-26",
       date_display: "26 Feb 2026",
       sehri: "05:08",
+      fajr: "05:11",
       iftar: "18:03",
     },
     {
@@ -911,6 +1039,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-27",
       date_display: "27 Feb 2026",
       sehri: "05:08",
+      fajr: "05:10",
       iftar: "18:04",
     },
     {
@@ -918,6 +1047,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-28",
       date_display: "28 Feb 2026",
       sehri: "05:07",
+      fajr: "05:10",
       iftar: "18:04",
     },
     {
@@ -925,6 +1055,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-01",
       date_display: "01 Mar 2026",
       sehri: "05:06",
+      fajr: "05:09",
       iftar: "18:05",
     },
     {
@@ -932,6 +1063,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-02",
       date_display: "02 Mar 2026",
       sehri: "05:05",
+      fajr: "05:08",
       iftar: "18:05",
     },
     {
@@ -939,6 +1071,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-03",
       date_display: "03 Mar 2026",
       sehri: "05:04",
+      fajr: "05:07",
       iftar: "18:06",
     },
     {
@@ -946,6 +1079,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-04",
       date_display: "04 Mar 2026",
       sehri: "05:03",
+      fajr: "05:06",
       iftar: "18:06",
     },
     {
@@ -953,6 +1087,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-05",
       date_display: "05 Mar 2026",
       sehri: "05:03",
+      fajr: "05:05",
       iftar: "18:07",
     },
     {
@@ -960,6 +1095,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-06",
       date_display: "06 Mar 2026",
       sehri: "05:02",
+      fajr: "05:05",
       iftar: "18:07",
     },
     {
@@ -967,6 +1103,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-07",
       date_display: "07 Mar 2026",
       sehri: "05:01",
+      fajr: "05:04",
       iftar: "18:07",
     },
     {
@@ -974,6 +1111,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-08",
       date_display: "08 Mar 2026",
       sehri: "05:00",
+      fajr: "05:03",
       iftar: "18:08",
     },
     {
@@ -981,6 +1119,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-09",
       date_display: "09 Mar 2026",
       sehri: "04:59",
+      fajr: "05:02",
       iftar: "18:08",
     },
     {
@@ -988,6 +1127,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-10",
       date_display: "10 Mar 2026",
       sehri: "04:58",
+      fajr: "05:01",
       iftar: "18:09",
     },
     {
@@ -995,6 +1135,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-11",
       date_display: "11 Mar 2026",
       sehri: "04:57",
+      fajr: "05:00",
       iftar: "18:09",
     },
     {
@@ -1002,6 +1143,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-12",
       date_display: "12 Mar 2026",
       sehri: "04:56",
+      fajr: "04:59",
       iftar: "18:09",
     },
     {
@@ -1009,6 +1151,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-13",
       date_display: "13 Mar 2026",
       sehri: "04:55",
+      fajr: "04:58",
       iftar: "18:10",
     },
     {
@@ -1016,6 +1159,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-14",
       date_display: "14 Mar 2026",
       sehri: "04:54",
+      fajr: "04:57",
       iftar: "18:10",
     },
     {
@@ -1023,6 +1167,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-15",
       date_display: "15 Mar 2026",
       sehri: "04:53",
+      fajr: "04:56",
       iftar: "18:11",
     },
     {
@@ -1030,6 +1175,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-16",
       date_display: "16 Mar 2026",
       sehri: "04:52",
+      fajr: "04:55",
       iftar: "18:11",
     },
     {
@@ -1037,6 +1183,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-17",
       date_display: "17 Mar 2026",
       sehri: "04:52",
+      fajr: "04:54",
       iftar: "18:11",
     },
     {
@@ -1044,6 +1191,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-18",
       date_display: "18 Mar 2026",
       sehri: "04:51",
+      fajr: "04:53",
       iftar: "18:12",
     },
     {
@@ -1051,6 +1199,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-19",
       date_display: "19 Mar 2026",
       sehri: "04:50",
+      fajr: "04:52",
       iftar: "18:12",
     },
     {
@@ -1058,6 +1207,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-20",
       date_display: "20 Mar 2026",
       sehri: "04:49",
+      fajr: "04:51",
       iftar: "18:13",
     },
   ],
@@ -1067,6 +1217,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-19",
       date_display: "19 Feb 2026",
       sehri: "05:13",
+      fajr: "05:16",
       iftar: "17:58",
     },
     {
@@ -1074,6 +1225,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-20",
       date_display: "20 Feb 2026",
       sehri: "05:12",
+      fajr: "05:14",
       iftar: "17:59",
     },
     {
@@ -1081,6 +1233,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-21",
       date_display: "21 Feb 2026",
       sehri: "05:12",
+      fajr: "05:12",
       iftar: "17:59",
     },
     {
@@ -1088,6 +1241,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-22",
       date_display: "22 Feb 2026",
       sehri: "05:11",
+      fajr: "05:16",
       iftar: "18:00",
     },
     {
@@ -1095,6 +1249,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-23",
       date_display: "23 Feb 2026",
       sehri: "05:10",
+      fajr: "05:15",
       iftar: "18:00",
     },
     {
@@ -1102,6 +1257,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-24",
       date_display: "24 Feb 2026",
       sehri: "05:09",
+      fajr: "05:13",
       iftar: "18:01",
     },
     {
@@ -1109,6 +1265,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-25",
       date_display: "25 Feb 2026",
       sehri: "05:09",
+      fajr: "05:13",
       iftar: "18:02",
     },
     {
@@ -1116,6 +1273,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-26",
       date_display: "26 Feb 2026",
       sehri: "05:08",
+      fajr: "05:11",
       iftar: "18:02",
     },
     {
@@ -1123,6 +1281,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-27",
       date_display: "27 Feb 2026",
       sehri: "05:07",
+      fajr: "05:10",
       iftar: "18:03",
     },
     {
@@ -1130,6 +1289,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-28",
       date_display: "28 Feb 2026",
       sehri: "05:06",
+      fajr: "05:09",
       iftar: "18:03",
     },
     {
@@ -1137,6 +1297,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-01",
       date_display: "01 Mar 2026",
       sehri: "05:05",
+      fajr: "05:09",
       iftar: "18:04",
     },
     {
@@ -1144,6 +1305,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-02",
       date_display: "02 Mar 2026",
       sehri: "05:05",
+      fajr: "05:08",
       iftar: "18:04",
     },
     {
@@ -1151,6 +1313,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-03",
       date_display: "03 Mar 2026",
       sehri: "05:04",
+      fajr: "05:07",
       iftar: "18:05",
     },
     {
@@ -1158,6 +1321,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-04",
       date_display: "04 Mar 2026",
       sehri: "05:03",
+      fajr: "05:06",
       iftar: "18:05",
     },
     {
@@ -1165,6 +1329,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-05",
       date_display: "05 Mar 2026",
       sehri: "05:02",
+      fajr: "05:05",
       iftar: "18:06",
     },
     {
@@ -1172,6 +1337,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-06",
       date_display: "06 Mar 2026",
       sehri: "05:01",
+      fajr: "05:04",
       iftar: "18:06",
     },
     {
@@ -1179,6 +1345,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-07",
       date_display: "07 Mar 2026",
       sehri: "05:00",
+      fajr: "05:03",
       iftar: "18:07",
     },
     {
@@ -1186,6 +1353,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-08",
       date_display: "08 Mar 2026",
       sehri: "04:59",
+      fajr: "05:02",
       iftar: "18:07",
     },
     {
@@ -1193,6 +1361,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-09",
       date_display: "09 Mar 2026",
       sehri: "04:58",
+      fajr: "05:01",
       iftar: "18:08",
     },
     {
@@ -1200,6 +1369,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-10",
       date_display: "10 Mar 2026",
       sehri: "04:57",
+      fajr: "05:00",
       iftar: "18:08",
     },
     {
@@ -1207,6 +1377,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-11",
       date_display: "11 Mar 2026",
       sehri: "04:56",
+      fajr: "04:59",
       iftar: "18:08",
     },
     {
@@ -1214,6 +1385,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-12",
       date_display: "12 Mar 2026",
       sehri: "04:55",
+      fajr: "04:58",
       iftar: "18:09",
     },
     {
@@ -1221,6 +1393,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-13",
       date_display: "13 Mar 2026",
       sehri: "04:54",
+      fajr: "04:57",
       iftar: "18:09",
     },
     {
@@ -1228,6 +1401,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-14",
       date_display: "14 Mar 2026",
       sehri: "04:53",
+      fajr: "04:56",
       iftar: "18:10",
     },
     {
@@ -1235,6 +1409,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-15",
       date_display: "15 Mar 2026",
       sehri: "04:52",
+      fajr: "04:55",
       iftar: "18:10",
     },
     {
@@ -1242,6 +1417,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-16",
       date_display: "16 Mar 2026",
       sehri: "04:51",
+      fajr: "04:54",
       iftar: "18:11",
     },
     {
@@ -1249,6 +1425,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-17",
       date_display: "17 Mar 2026",
       sehri: "04:50",
+      fajr: "04:53",
       iftar: "18:11",
     },
     {
@@ -1256,6 +1433,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-18",
       date_display: "18 Mar 2026",
       sehri: "04:49",
+      fajr: "04:52",
       iftar: "18:12",
     },
     {
@@ -1263,6 +1441,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-19",
       date_display: "19 Mar 2026",
       sehri: "04:48",
+      fajr: "04:51",
       iftar: "18:12",
     },
     {
@@ -1270,6 +1449,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-20",
       date_display: "20 Mar 2026",
       sehri: "04:47",
+      fajr: "04:50",
       iftar: "18:12",
     },
   ],
@@ -1279,6 +1459,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-19",
       date_display: "19 Feb 2026",
       sehri: "05:10",
+      fajr: "05:13",
       iftar: "17:55",
     },
     {
@@ -1286,6 +1467,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-20",
       date_display: "20 Feb 2026",
       sehri: "05:10",
+      fajr: "05:12",
       iftar: "17:56",
     },
     {
@@ -1293,6 +1475,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-21",
       date_display: "21 Feb 2026",
       sehri: "05:09",
+      fajr: "05:11",
       iftar: "17:57",
     },
     {
@@ -1300,6 +1483,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-22",
       date_display: "22 Feb 2026",
       sehri: "05:08",
+      fajr: "05:11",
       iftar: "17:57",
     },
     {
@@ -1307,6 +1491,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-23",
       date_display: "23 Feb 2026",
       sehri: "05:07",
+      fajr: "05:10",
       iftar: "17:58",
     },
     {
@@ -1314,6 +1499,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-24",
       date_display: "24 Feb 2026",
       sehri: "05:07",
+      fajr: "05:09",
       iftar: "17:58",
     },
     {
@@ -1321,6 +1507,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-25",
       date_display: "25 Feb 2026",
       sehri: "05:06",
+      fajr: "05:08",
       iftar: "17:59",
     },
     {
@@ -1328,6 +1515,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-26",
       date_display: "26 Feb 2026",
       sehri: "05:05",
+      fajr: "05:08",
       iftar: "17:59",
     },
     {
@@ -1335,6 +1523,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-27",
       date_display: "27 Feb 2026",
       sehri: "05:04",
+      fajr: "05:07",
       iftar: "18:00",
     },
     {
@@ -1342,6 +1531,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-28",
       date_display: "28 Feb 2026",
       sehri: "05:03",
+      fajr: "05:06",
       iftar: "18:00",
     },
     {
@@ -1349,6 +1539,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-01",
       date_display: "01 Mar 2026",
       sehri: "05:03",
+      fajr: "05:05",
       iftar: "18:01",
     },
     {
@@ -1356,6 +1547,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-02",
       date_display: "02 Mar 2026",
       sehri: "05:02",
+      fajr: "05:04",
       iftar: "18:01",
     },
     {
@@ -1363,6 +1555,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-03",
       date_display: "03 Mar 2026",
       sehri: "05:01",
+      fajr: "05:04",
       iftar: "18:02",
     },
     {
@@ -1370,6 +1563,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-04",
       date_display: "04 Mar 2026",
       sehri: "05:00",
+      fajr: "05:03",
       iftar: "18:02",
     },
     {
@@ -1377,6 +1571,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-05",
       date_display: "05 Mar 2026",
       sehri: "04:59",
+      fajr: "05:02",
       iftar: "18:03",
     },
     {
@@ -1384,6 +1579,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-06",
       date_display: "06 Mar 2026",
       sehri: "04:58",
+      fajr: "05:01",
       iftar: "18:03",
     },
     {
@@ -1391,6 +1587,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-07",
       date_display: "07 Mar 2026",
       sehri: "04:57",
+      fajr: "05:00",
       iftar: "18:04",
     },
     {
@@ -1398,6 +1595,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-08",
       date_display: "08 Mar 2026",
       sehri: "04:56",
+      fajr: "04:59",
       iftar: "18:04",
     },
     {
@@ -1405,6 +1603,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-09",
       date_display: "09 Mar 2026",
       sehri: "04:56",
+      fajr: "04:58",
       iftar: "18:04",
     },
     {
@@ -1412,6 +1611,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-10",
       date_display: "10 Mar 2026",
       sehri: "04:55",
+      fajr: "04:57",
       iftar: "18:05",
     },
     {
@@ -1419,6 +1619,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-11",
       date_display: "11 Mar 2026",
       sehri: "04:54",
+      fajr: "04:56",
       iftar: "18:05",
     },
     {
@@ -1426,6 +1627,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-12",
       date_display: "12 Mar 2026",
       sehri: "04:53",
+      fajr: "04:55",
       iftar: "18:06",
     },
     {
@@ -1433,6 +1635,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-13",
       date_display: "13 Mar 2026",
       sehri: "04:52",
+      fajr: "04:54",
       iftar: "18:06",
     },
     {
@@ -1440,6 +1643,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-14",
       date_display: "14 Mar 2026",
       sehri: "04:51",
+      fajr: "04:53",
       iftar: "18:07",
     },
     {
@@ -1447,6 +1651,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-15",
       date_display: "15 Mar 2026",
       sehri: "04:50",
+      fajr: "04:52",
       iftar: "18:07",
     },
     {
@@ -1454,6 +1659,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-16",
       date_display: "16 Mar 2026",
       sehri: "04:49",
+      fajr: "04:51",
       iftar: "18:07",
     },
     {
@@ -1461,6 +1667,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-17",
       date_display: "17 Mar 2026",
       sehri: "04:48",
+      fajr: "04:50",
       iftar: "18:08",
     },
     {
@@ -1468,6 +1675,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-18",
       date_display: "18 Mar 2026",
       sehri: "04:47",
+      fajr: "04:49",
       iftar: "18:08",
     },
     {
@@ -1475,6 +1683,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-19",
       date_display: "19 Mar 2026",
       sehri: "04:46",
+      fajr: "04:48",
       iftar: "18:09",
     },
     {
@@ -1482,6 +1691,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-20",
       date_display: "20 Mar 2026",
       sehri: "04:45",
+      fajr: "04:47",
       iftar: "18:09",
     },
   ],
@@ -1491,6 +1701,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-19",
       date_display: "19 Feb 2026",
       sehri: "05:13",
+      fajr: "05:17",
       iftar: "18:00",
     },
     {
@@ -1498,6 +1709,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-20",
       date_display: "20 Feb 2026",
       sehri: "05:12",
+      fajr: "05:16",
       iftar: "18:01",
     },
     {
@@ -1505,6 +1717,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-21",
       date_display: "21 Feb 2026",
       sehri: "05:12",
+      fajr: "05:16",
       iftar: "18:01",
     },
     {
@@ -1512,6 +1725,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-22",
       date_display: "22 Feb 2026",
       sehri: "05:11",
+      fajr: "05:15",
       iftar: "18:02",
     },
     {
@@ -1519,6 +1733,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-23",
       date_display: "23 Feb 2026",
       sehri: "05:10",
+      fajr: "05:14",
       iftar: "18:02",
     },
     {
@@ -1526,6 +1741,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-24",
       date_display: "24 Feb 2026",
       sehri: "05:10",
+      fajr: "05:13",
       iftar: "18:03",
     },
     {
@@ -1533,6 +1749,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-25",
       date_display: "25 Feb 2026",
       sehri: "05:09",
+      fajr: "05:13",
       iftar: "18:03",
     },
     {
@@ -1540,6 +1757,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-26",
       date_display: "26 Feb 2026",
       sehri: "05:08",
+      fajr: "05:12",
       iftar: "18:04",
     },
     {
@@ -1547,6 +1765,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-27",
       date_display: "27 Feb 2026",
       sehri: "05:07",
+      fajr: "05:11",
       iftar: "18:04",
     },
     {
@@ -1554,6 +1773,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-28",
       date_display: "28 Feb 2026",
       sehri: "05:06",
+      fajr: "05:10",
       iftar: "18:05",
     },
     {
@@ -1561,6 +1781,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-01",
       date_display: "01 Mar 2026",
       sehri: "05:06",
+      fajr: "05:10",
       iftar: "18:05",
     },
     {
@@ -1568,6 +1789,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-02",
       date_display: "02 Mar 2026",
       sehri: "05:05",
+      fajr: "05:09",
       iftar: "18:06",
     },
     {
@@ -1575,6 +1797,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-03",
       date_display: "03 Mar 2026",
       sehri: "05:04",
+      fajr: "05:08",
       iftar: "18:06",
     },
     {
@@ -1582,6 +1805,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-04",
       date_display: "04 Mar 2026",
       sehri: "05:03",
+      fajr: "05:07",
       iftar: "18:07",
     },
     {
@@ -1589,6 +1813,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-05",
       date_display: "05 Mar 2026",
       sehri: "05:02",
+      fajr: "05:06",
       iftar: "18:07",
     },
     {
@@ -1596,6 +1821,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-06",
       date_display: "06 Mar 2026",
       sehri: "05:01",
+      fajr: "05:05",
       iftar: "18:08",
     },
     {
@@ -1603,6 +1829,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-07",
       date_display: "07 Mar 2026",
       sehri: "05:00",
+      fajr: "05:04",
       iftar: "18:08",
     },
     {
@@ -1610,6 +1837,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-08",
       date_display: "08 Mar 2026",
       sehri: "05:00",
+      fajr: "05:03",
       iftar: "18:08",
     },
     {
@@ -1617,6 +1845,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-09",
       date_display: "09 Mar 2026",
       sehri: "04:59",
+      fajr: "05:03",
       iftar: "18:09",
     },
     {
@@ -1624,6 +1853,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-10",
       date_display: "10 Mar 2026",
       sehri: "04:58",
+      fajr: "05:02",
       iftar: "18:09",
     },
     {
@@ -1631,6 +1861,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-11",
       date_display: "11 Mar 2026",
       sehri: "04:57",
+      fajr: "05:01",
       iftar: "18:10",
     },
     {
@@ -1638,6 +1869,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-12",
       date_display: "12 Mar 2026",
       sehri: "04:56",
+      fajr: "05:00",
       iftar: "18:10",
     },
     {
@@ -1645,6 +1877,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-13",
       date_display: "13 Mar 2026",
       sehri: "04:55",
+      fajr: "04:59",
       iftar: "18:11",
     },
     {
@@ -1652,6 +1885,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-14",
       date_display: "14 Mar 2026",
       sehri: "04:54",
+      fajr: "04:58",
       iftar: "18:11",
     },
     {
@@ -1659,6 +1893,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-15",
       date_display: "15 Mar 2026",
       sehri: "04:53",
+      fajr: "04:57",
       iftar: "18:11",
     },
     {
@@ -1666,6 +1901,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-16",
       date_display: "16 Mar 2026",
       sehri: "04:52",
+      fajr: "04:56",
       iftar: "18:12",
     },
     {
@@ -1673,6 +1909,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-17",
       date_display: "17 Mar 2026",
       sehri: "04:51",
+      fajr: "04:55",
       iftar: "18:12",
     },
     {
@@ -1680,6 +1917,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-18",
       date_display: "18 Mar 2026",
       sehri: "04:50",
+      fajr: "04:54",
       iftar: "18:13",
     },
     {
@@ -1687,6 +1925,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-19",
       date_display: "19 Mar 2026",
       sehri: "04:49",
+      fajr: "04:53",
       iftar: "18:13",
     },
     {
@@ -1694,6 +1933,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-20",
       date_display: "20 Mar 2026",
       sehri: "04:48",
+      fajr: "04:52",
       iftar: "18:13",
     },
   ],
@@ -1703,6 +1943,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-19",
       date_display: "19 Feb 2026",
       sehri: "05:12",
+      fajr: "05:15",
       iftar: "17:59",
     },
     {
@@ -1710,6 +1951,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-20",
       date_display: "20 Feb 2026",
       sehri: "05:12",
+      fajr: "05:14",
       iftar: "17:59",
     },
     {
@@ -1717,6 +1959,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-21",
       date_display: "21 Feb 2026",
       sehri: "05:11",
+      fajr: "05:14",
       iftar: "18:00",
     },
     {
@@ -1724,6 +1967,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-22",
       date_display: "22 Feb 2026",
       sehri: "05:10",
+      fajr: "05:13",
       iftar: "18:00",
     },
     {
@@ -1731,6 +1975,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-23",
       date_display: "23 Feb 2026",
       sehri: "05:10",
+      fajr: "05:12",
       iftar: "18:01",
     },
     {
@@ -1738,6 +1983,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-24",
       date_display: "24 Feb 2026",
       sehri: "05:09",
+      fajr: "05:12",
       iftar: "18:01",
     },
     {
@@ -1745,6 +1991,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-25",
       date_display: "25 Feb 2026",
       sehri: "05:08",
+      fajr: "05:11",
       iftar: "18:02",
     },
     {
@@ -1752,6 +1999,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-26",
       date_display: "26 Feb 2026",
       sehri: "05:07",
+      fajr: "05:10",
       iftar: "18:02",
     },
     {
@@ -1759,6 +2007,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-27",
       date_display: "27 Feb 2026",
       sehri: "05:07",
+      fajr: "05:09",
       iftar: "18:03",
     },
     {
@@ -1766,6 +2015,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-28",
       date_display: "28 Feb 2026",
       sehri: "05:06",
+      fajr: "05:09",
       iftar: "18:03",
     },
     {
@@ -1773,6 +2023,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-01",
       date_display: "01 Mar 2026",
       sehri: "05:05",
+      fajr: "05:08",
       iftar: "18:04",
     },
     {
@@ -1780,6 +2031,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-02",
       date_display: "02 Mar 2026",
       sehri: "05:04",
+      fajr: "05:07",
       iftar: "18:04",
     },
     {
@@ -1787,6 +2039,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-03",
       date_display: "03 Mar 2026",
       sehri: "05:03",
+      fajr: "05:06",
       iftar: "18:05",
     },
     {
@@ -1794,6 +2047,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-04",
       date_display: "04 Mar 2026",
       sehri: "05:03",
+      fajr: "05:05",
       iftar: "18:05",
     },
     {
@@ -1801,6 +2055,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-05",
       date_display: "05 Mar 2026",
       sehri: "05:02",
+      fajr: "05:04",
       iftar: "18:05",
     },
     {
@@ -1808,6 +2063,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-06",
       date_display: "06 Mar 2026",
       sehri: "05:01",
+      fajr: "05:04",
       iftar: "18:06",
     },
     {
@@ -1815,6 +2071,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-07",
       date_display: "07 Mar 2026",
       sehri: "05:00",
+      fajr: "05:03",
       iftar: "18:06",
     },
     {
@@ -1822,6 +2079,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-08",
       date_display: "08 Mar 2026",
       sehri: "04:59",
+      fajr: "05:02",
       iftar: "18:07",
     },
     {
@@ -1829,6 +2087,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-09",
       date_display: "09 Mar 2026",
       sehri: "04:58",
+      fajr: "05:01",
       iftar: "18:07",
     },
     {
@@ -1836,6 +2095,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-10",
       date_display: "10 Mar 2026",
       sehri: "04:57",
+      fajr: "05:00",
       iftar: "18:08",
     },
     {
@@ -1843,6 +2103,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-11",
       date_display: "11 Mar 2026",
       sehri: "04:56",
+      fajr: "04:59",
       iftar: "18:08",
     },
     {
@@ -1850,6 +2111,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-12",
       date_display: "12 Mar 2026",
       sehri: "04:55",
+      fajr: "04:58",
       iftar: "18:08",
     },
     {
@@ -1857,6 +2119,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-13",
       date_display: "13 Mar 2026",
       sehri: "04:54",
+      fajr: "04:57",
       iftar: "18:09",
     },
     {
@@ -1864,6 +2127,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-14",
       date_display: "14 Mar 2026",
       sehri: "04:54",
+      fajr: "04:56",
       iftar: "18:09",
     },
     {
@@ -1871,6 +2135,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-15",
       date_display: "15 Mar 2026",
       sehri: "04:53",
+      fajr: "04:55",
       iftar: "18:10",
     },
     {
@@ -1878,6 +2143,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-16",
       date_display: "16 Mar 2026",
       sehri: "04:52",
+      fajr: "04:54",
       iftar: "18:10",
     },
     {
@@ -1885,6 +2151,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-17",
       date_display: "17 Mar 2026",
       sehri: "04:51",
+      fajr: "04:53",
       iftar: "18:10",
     },
     {
@@ -1892,6 +2159,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-18",
       date_display: "18 Mar 2026",
       sehri: "04:50",
+      fajr: "04:52",
       iftar: "18:11",
     },
     {
@@ -1899,6 +2167,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-19",
       date_display: "19 Mar 2026",
       sehri: "04:49",
+      fajr: "04:51",
       iftar: "18:11",
     },
     {
@@ -1906,6 +2175,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-20",
       date_display: "20 Mar 2026",
       sehri: "04:48",
+      fajr: "04:50",
       iftar: "18:12",
     },
   ],
@@ -1915,6 +2185,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-19",
       date_display: "19 Feb 2026",
       sehri: "05:13",
+      fajr: "05:16",
       iftar: "17:59",
     },
     {
@@ -1922,6 +2193,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-20",
       date_display: "20 Feb 2026",
       sehri: "05:12",
+      fajr: "05:16",
       iftar: "18:00",
     },
     {
@@ -1929,6 +2201,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-21",
       date_display: "21 Feb 2026",
       sehri: "05:12",
+      fajr: "05:15",
       iftar: "18:00",
     },
     {
@@ -1936,6 +2209,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-22",
       date_display: "22 Feb 2026",
       sehri: "05:11",
+      fajr: "05:14",
       iftar: "18:01",
     },
     {
@@ -1943,6 +2217,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-23",
       date_display: "23 Feb 2026",
       sehri: "05:10",
+      fajr: "05:14",
       iftar: "18:01",
     },
     {
@@ -1950,6 +2225,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-24",
       date_display: "24 Feb 2026",
       sehri: "05:09",
+      fajr: "05:13",
       iftar: "18:02",
     },
     {
@@ -1957,6 +2233,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-25",
       date_display: "25 Feb 2026",
       sehri: "05:09",
+      fajr: "05:12",
       iftar: "18:02",
     },
     {
@@ -1964,6 +2241,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-26",
       date_display: "26 Feb 2026",
       sehri: "05:08",
+      fajr: "05:11",
       iftar: "18:03",
     },
     {
@@ -1971,6 +2249,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-27",
       date_display: "27 Feb 2026",
       sehri: "05:07",
+      fajr: "05:10",
       iftar: "18:03",
     },
     {
@@ -1978,6 +2257,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-28",
       date_display: "28 Feb 2026",
       sehri: "05:06",
+      fajr: "05:10",
       iftar: "18:04",
     },
     {
@@ -1985,6 +2265,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-01",
       date_display: "01 Mar 2026",
       sehri: "05:06",
+      fajr: "05:09",
       iftar: "18:04",
     },
     {
@@ -1992,6 +2273,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-02",
       date_display: "02 Mar 2026",
       sehri: "05:05",
+      fajr: "05:08",
       iftar: "18:05",
     },
     {
@@ -1999,6 +2281,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-03",
       date_display: "03 Mar 2026",
       sehri: "05:04",
+      fajr: "05:07",
       iftar: "18:05",
     },
     {
@@ -2006,6 +2289,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-04",
       date_display: "04 Mar 2026",
       sehri: "05:03",
+      fajr: "05:06",
       iftar: "18:06",
     },
     {
@@ -2013,6 +2297,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-05",
       date_display: "05 Mar 2026",
       sehri: "05:02",
+      fajr: "05:05",
       iftar: "18:06",
     },
     {
@@ -2020,6 +2305,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-06",
       date_display: "06 Mar 2026",
       sehri: "05:01",
+      fajr: "05:04",
       iftar: "18:07",
     },
     {
@@ -2027,6 +2313,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-07",
       date_display: "07 Mar 2026",
       sehri: "05:00",
+      fajr: "05:04",
       iftar: "18:07",
     },
     {
@@ -2034,6 +2321,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-08",
       date_display: "08 Mar 2026",
       sehri: "04:59",
+      fajr: "05:03",
       iftar: "18:07",
     },
     {
@@ -2041,6 +2329,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-09",
       date_display: "09 Mar 2026",
       sehri: "04:58",
+      fajr: "05:02",
       iftar: "18:08",
     },
     {
@@ -2048,6 +2337,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-10",
       date_display: "10 Mar 2026",
       sehri: "04:58",
+      fajr: "05:01",
       iftar: "18:08",
     },
     {
@@ -2055,6 +2345,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-11",
       date_display: "11 Mar 2026",
       sehri: "04:57",
+      fajr: "05:00",
       iftar: "18:09",
     },
     {
@@ -2062,6 +2353,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-12",
       date_display: "12 Mar 2026",
       sehri: "04:56",
+      fajr: "04:59",
       iftar: "18:09",
     },
     {
@@ -2069,6 +2361,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-13",
       date_display: "13 Mar 2026",
       sehri: "04:55",
+      fajr: "04:58",
       iftar: "18:10",
     },
     {
@@ -2076,6 +2369,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-14",
       date_display: "14 Mar 2026",
       sehri: "04:54",
+      fajr: "04:57",
       iftar: "18:10",
     },
     {
@@ -2083,6 +2377,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-15",
       date_display: "15 Mar 2026",
       sehri: "04:53",
+      fajr: "04:56",
       iftar: "18:11",
     },
     {
@@ -2090,6 +2385,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-16",
       date_display: "16 Mar 2026",
       sehri: "04:52",
+      fajr: "04:55",
       iftar: "18:11",
     },
     {
@@ -2097,6 +2393,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-17",
       date_display: "17 Mar 2026",
       sehri: "04:51",
+      fajr: "04:54",
       iftar: "18:11",
     },
     {
@@ -2104,6 +2401,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-18",
       date_display: "18 Mar 2026",
       sehri: "04:50",
+      fajr: "04:53",
       iftar: "18:12",
     },
     {
@@ -2111,6 +2409,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-19",
       date_display: "19 Mar 2026",
       sehri: "04:49",
+      fajr: "04:52",
       iftar: "18:12",
     },
     {
@@ -2118,6 +2417,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-20",
       date_display: "20 Mar 2026",
       sehri: "04:48",
+      fajr: "04:51",
       iftar: "18:13",
     },
   ],
@@ -2127,6 +2427,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-19",
       date_display: "19 Feb 2026",
       sehri: "05:11",
+      fajr: "05:14",
       iftar: "17:57",
     },
     {
@@ -2134,6 +2435,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-20",
       date_display: "20 Feb 2026",
       sehri: "05:10",
+      fajr: "05:14",
       iftar: "17:58",
     },
     {
@@ -2141,6 +2443,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-21",
       date_display: "21 Feb 2026",
       sehri: "05:10",
+      fajr: "05:13",
       iftar: "17:58",
     },
     {
@@ -2148,6 +2451,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-22",
       date_display: "22 Feb 2026",
       sehri: "05:09",
+      fajr: "05:12",
       iftar: "17:59",
     },
     {
@@ -2155,6 +2459,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-23",
       date_display: "23 Feb 2026",
       sehri: "05:08",
+      fajr: "05:11",
       iftar: "17:59",
     },
     {
@@ -2162,6 +2467,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-24",
       date_display: "24 Feb 2026",
       sehri: "05:08",
+      fajr: "05:11",
       iftar: "18:00",
     },
     {
@@ -2169,6 +2475,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-25",
       date_display: "25 Feb 2026",
       sehri: "05:07",
+      fajr: "05:10",
       iftar: "18:01",
     },
     {
@@ -2176,6 +2483,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-26",
       date_display: "26 Feb 2026",
       sehri: "05:06",
+      fajr: "05:09",
       iftar: "18:01",
     },
     {
@@ -2183,6 +2491,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-27",
       date_display: "27 Feb 2026",
       sehri: "05:05",
+      fajr: "05:08",
       iftar: "18:01",
     },
     {
@@ -2190,6 +2499,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-28",
       date_display: "28 Feb 2026",
       sehri: "05:05",
+      fajr: "05:08",
       iftar: "18:02",
     },
     {
@@ -2197,6 +2507,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-01",
       date_display: "01 Mar 2026",
       sehri: "05:04",
+      fajr: "05:07",
       iftar: "18:02",
     },
     {
@@ -2204,6 +2515,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-02",
       date_display: "02 Mar 2026",
       sehri: "05:03",
+      fajr: "05:06",
       iftar: "18:03",
     },
     {
@@ -2211,6 +2523,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-03",
       date_display: "03 Mar 2026",
       sehri: "05:02",
+      fajr: "05:05",
       iftar: "18:03",
     },
     {
@@ -2218,6 +2531,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-04",
       date_display: "04 Mar 2026",
       sehri: "05:01",
+      fajr: "05:04",
       iftar: "18:04",
     },
     {
@@ -2225,6 +2539,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-05",
       date_display: "05 Mar 2026",
       sehri: "05:00",
+      fajr: "05:03",
       iftar: "18:04",
     },
     {
@@ -2232,6 +2547,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-06",
       date_display: "06 Mar 2026",
       sehri: "04:59",
+      fajr: "05:03",
       iftar: "18:05",
     },
     {
@@ -2239,6 +2555,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-07",
       date_display: "07 Mar 2026",
       sehri: "04:59",
+      fajr: "05:02",
       iftar: "18:05",
     },
     {
@@ -2246,6 +2563,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-08",
       date_display: "08 Mar 2026",
       sehri: "04:58",
+      fajr: "05:01",
       iftar: "18:06",
     },
     {
@@ -2253,6 +2571,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-09",
       date_display: "09 Mar 2026",
       sehri: "04:57",
+      fajr: "05:00",
       iftar: "18:06",
     },
     {
@@ -2260,6 +2579,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-10",
       date_display: "10 Mar 2026",
       sehri: "04:56",
+      fajr: "04:59",
       iftar: "18:06",
     },
     {
@@ -2267,6 +2587,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-11",
       date_display: "11 Mar 2026",
       sehri: "04:55",
+      fajr: "04:58",
       iftar: "18:07",
     },
     {
@@ -2274,6 +2595,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-12",
       date_display: "12 Mar 2026",
       sehri: "04:54",
+      fajr: "04:57",
       iftar: "18:07",
     },
     {
@@ -2281,6 +2603,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-13",
       date_display: "13 Mar 2026",
       sehri: "04:53",
+      fajr: "04:56",
       iftar: "18:08",
     },
     {
@@ -2288,6 +2611,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-14",
       date_display: "14 Mar 2026",
       sehri: "04:52",
+      fajr: "04:55",
       iftar: "18:08",
     },
     {
@@ -2295,6 +2619,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-15",
       date_display: "15 Mar 2026",
       sehri: "04:51",
+      fajr: "04:54",
       iftar: "18:09",
     },
     {
@@ -2302,6 +2627,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-16",
       date_display: "16 Mar 2026",
       sehri: "04:50",
+      fajr: "04:53",
       iftar: "18:09",
     },
     {
@@ -2309,6 +2635,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-17",
       date_display: "17 Mar 2026",
       sehri: "04:49",
+      fajr: "04:52",
       iftar: "18:09",
     },
     {
@@ -2316,6 +2643,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-18",
       date_display: "18 Mar 2026",
       sehri: "04:48",
+      fajr: "04:51",
       iftar: "18:10",
     },
     {
@@ -2323,6 +2651,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-19",
       date_display: "19 Mar 2026",
       sehri: "04:47",
+      fajr: "04:50",
       iftar: "18:10",
     },
     {
@@ -2330,6 +2659,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-20",
       date_display: "20 Mar 2026",
       sehri: "04:46",
+      fajr: "04:49",
       iftar: "18:11",
     },
   ],
@@ -2339,6 +2669,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-19",
       date_display: "19 Feb 2026",
       sehri: "05:15",
+      fajr: "05:18",
       iftar: "18:01",
     },
     {
@@ -2346,6 +2677,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-20",
       date_display: "20 Feb 2026",
       sehri: "05:14",
+      fajr: "05:17",
       iftar: "18:01",
     },
     {
@@ -2353,6 +2685,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-21",
       date_display: "21 Feb 2026",
       sehri: "05:13",
+      fajr: "05:16",
       iftar: "18:02",
     },
     {
@@ -2360,6 +2693,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-22",
       date_display: "22 Feb 2026",
       sehri: "05:13",
+      fajr: "05:16",
       iftar: "18:02",
     },
     {
@@ -2367,6 +2701,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-23",
       date_display: "23 Feb 2026",
       sehri: "05:12",
+      fajr: "05:15",
       iftar: "18:03",
     },
     {
@@ -2374,6 +2709,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-24",
       date_display: "24 Feb 2026",
       sehri: "05:11",
+      fajr: "05:14",
       iftar: "18:03",
     },
     {
@@ -2381,6 +2717,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-25",
       date_display: "25 Feb 2026",
       sehri: "05:10",
+      fajr: "05:13",
       iftar: "18:04",
     },
     {
@@ -2388,6 +2725,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-26",
       date_display: "26 Feb 2026",
       sehri: "05:10",
+      fajr: "05:13",
       iftar: "18:04",
     },
     {
@@ -2395,6 +2733,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-27",
       date_display: "27 Feb 2026",
       sehri: "05:09",
+      fajr: "05:12",
       iftar: "18:05",
     },
     {
@@ -2402,6 +2741,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-28",
       date_display: "28 Feb 2026",
       sehri: "05:08",
+      fajr: "05:11",
       iftar: "18:05",
     },
     {
@@ -2409,6 +2749,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-01",
       date_display: "01 Mar 2026",
       sehri: "05:07",
+      fajr: "05:10",
       iftar: "18:06",
     },
     {
@@ -2416,6 +2757,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-02",
       date_display: "02 Mar 2026",
       sehri: "05:06",
+      fajr: "05:09",
       iftar: "18:06",
     },
     {
@@ -2423,6 +2765,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-03",
       date_display: "03 Mar 2026",
       sehri: "05:05",
+      fajr: "05:09",
       iftar: "18:07",
     },
     {
@@ -2430,6 +2773,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-04",
       date_display: "04 Mar 2026",
       sehri: "05:05",
+      fajr: "05:08",
       iftar: "18:07",
     },
     {
@@ -2437,6 +2781,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-05",
       date_display: "05 Mar 2026",
       sehri: "05:04",
+      fajr: "05:07",
       iftar: "18:08",
     },
     {
@@ -2444,6 +2789,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-06",
       date_display: "06 Mar 2026",
       sehri: "05:03",
+      fajr: "05:06",
       iftar: "18:08",
     },
     {
@@ -2451,6 +2797,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-07",
       date_display: "07 Mar 2026",
       sehri: "05:02",
+      fajr: "05:05",
       iftar: "18:09",
     },
     {
@@ -2458,6 +2805,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-08",
       date_display: "08 Mar 2026",
       sehri: "05:01",
+      fajr: "05:04",
       iftar: "18:09",
     },
     {
@@ -2465,6 +2813,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-09",
       date_display: "09 Mar 2026",
       sehri: "05:00",
+      fajr: "05:03",
       iftar: "18:09",
     },
     {
@@ -2472,6 +2821,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-10",
       date_display: "10 Mar 2026",
       sehri: "04:59",
+      fajr: "05:02",
       iftar: "18:10",
     },
     {
@@ -2479,6 +2829,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-11",
       date_display: "11 Mar 2026",
       sehri: "04:58",
+      fajr: "05:01",
       iftar: "18:10",
     },
     {
@@ -2486,6 +2837,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-12",
       date_display: "12 Mar 2026",
       sehri: "04:57",
+      fajr: "05:00",
       iftar: "18:11",
     },
     {
@@ -2493,6 +2845,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-13",
       date_display: "13 Mar 2026",
       sehri: "04:56",
+      fajr: "04:59",
       iftar: "18:11",
     },
     {
@@ -2500,6 +2853,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-14",
       date_display: "14 Mar 2026",
       sehri: "04:55",
+      fajr: "04:58",
       iftar: "18:12",
     },
     {
@@ -2507,6 +2861,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-15",
       date_display: "15 Mar 2026",
       sehri: "04:54",
+      fajr: "04:57",
       iftar: "18:12",
     },
     {
@@ -2514,6 +2869,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-16",
       date_display: "16 Mar 2026",
       sehri: "04:53",
+      fajr: "04:56",
       iftar: "18:12",
     },
     {
@@ -2521,6 +2877,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-17",
       date_display: "17 Mar 2026",
       sehri: "04:52",
+      fajr: "04:55",
       iftar: "18:13",
     },
     {
@@ -2528,6 +2885,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-18",
       date_display: "18 Mar 2026",
       sehri: "04:51",
+      fajr: "04:54",
       iftar: "18:13",
     },
     {
@@ -2535,6 +2893,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-19",
       date_display: "19 Mar 2026",
       sehri: "04:50",
+      fajr: "04:53",
       iftar: "18:14",
     },
     {
@@ -2542,6 +2901,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-20",
       date_display: "20 Mar 2026",
       sehri: "04:49",
+      fajr: "04:52",
       iftar: "18:14",
     },
   ],
@@ -2551,6 +2911,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-19",
       date_display: "19 Feb 2026",
       sehri: "05:11",
+      fajr: "05:14",
       iftar: "17:57",
     },
     {
@@ -2558,6 +2919,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-20",
       date_display: "20 Feb 2026",
       sehri: "05:11",
+      fajr: "05:13",
       iftar: "17:58",
     },
     {
@@ -2565,6 +2927,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-21",
       date_display: "21 Feb 2026",
       sehri: "05:10",
+      fajr: "05:13",
       iftar: "17:58",
     },
     {
@@ -2572,6 +2935,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-22",
       date_display: "22 Feb 2026",
       sehri: "05:09",
+      fajr: "05:12",
       iftar: "17:59",
     },
     {
@@ -2579,6 +2943,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-23",
       date_display: "23 Feb 2026",
       sehri: "05:09",
+      fajr: "05:11",
       iftar: "18:00",
     },
     {
@@ -2586,6 +2951,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-24",
       date_display: "24 Feb 2026",
       sehri: "05:08",
+      fajr: "05:11",
       iftar: "18:00",
     },
     {
@@ -2593,6 +2959,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-25",
       date_display: "25 Feb 2026",
       sehri: "05:07",
+      fajr: "05:10",
       iftar: "18:01",
     },
     {
@@ -2600,6 +2967,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-26",
       date_display: "26 Feb 2026",
       sehri: "05:06",
+      fajr: "05:09",
       iftar: "18:01",
     },
     {
@@ -2607,6 +2975,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-27",
       date_display: "27 Feb 2026",
       sehri: "05:06",
+      fajr: "05:08",
       iftar: "18:02",
     },
     {
@@ -2614,6 +2983,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-02-28",
       date_display: "28 Feb 2026",
       sehri: "05:05",
+      fajr: "05:07",
       iftar: "18:02",
     },
     {
@@ -2621,6 +2991,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-01",
       date_display: "01 Mar 2026",
       sehri: "05:04",
+      fajr: "05:07",
       iftar: "18:02",
     },
     {
@@ -2628,6 +2999,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-02",
       date_display: "02 Mar 2026",
       sehri: "05:03",
+      fajr: "05:06",
       iftar: "18:03",
     },
     {
@@ -2635,6 +3007,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-03",
       date_display: "03 Mar 2026",
       sehri: "05:02",
+      fajr: "05:05",
       iftar: "18:03",
     },
     {
@@ -2642,6 +3015,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-04",
       date_display: "04 Mar 2026",
       sehri: "05:02",
+      fajr: "05:04",
       iftar: "18:04",
     },
     {
@@ -2649,6 +3023,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-05",
       date_display: "05 Mar 2026",
       sehri: "05:01",
+      fajr: "05:03",
       iftar: "18:04",
     },
     {
@@ -2656,6 +3031,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-06",
       date_display: "06 Mar 2026",
       sehri: "05:00",
+      fajr: "05:02",
       iftar: "18:05",
     },
     {
@@ -2663,6 +3039,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-07",
       date_display: "07 Mar 2026",
       sehri: "04:59",
+      fajr: "05:02",
       iftar: "18:05",
     },
     {
@@ -2670,6 +3047,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-08",
       date_display: "08 Mar 2026",
       sehri: "04:58",
+      fajr: "05:01",
       iftar: "18:06",
     },
     {
@@ -2677,6 +3055,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-09",
       date_display: "09 Mar 2026",
       sehri: "04:57",
+      fajr: "05:00",
       iftar: "18:06",
     },
     {
@@ -2684,6 +3063,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-10",
       date_display: "10 Mar 2026",
       sehri: "04:56",
+      fajr: "04:59",
       iftar: "18:06",
     },
     {
@@ -2691,6 +3071,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-11",
       date_display: "11 Mar 2026",
       sehri: "04:55",
+      fajr: "04:58",
       iftar: "18:07",
     },
     {
@@ -2698,6 +3079,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-12",
       date_display: "12 Mar 2026",
       sehri: "04:54",
+      fajr: "04:57",
       iftar: "18:07",
     },
     {
@@ -2705,6 +3087,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-13",
       date_display: "13 Mar 2026",
       sehri: "04:53",
+      fajr: "04:56",
       iftar: "18:08",
     },
     {
@@ -2712,6 +3095,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-14",
       date_display: "14 Mar 2026",
       sehri: "04:52",
+      fajr: "04:55",
       iftar: "18:08",
     },
     {
@@ -2719,6 +3103,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-15",
       date_display: "15 Mar 2026",
       sehri: "04:51",
+      fajr: "04:54",
       iftar: "18:09",
     },
     {
@@ -2726,6 +3111,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-16",
       date_display: "16 Mar 2026",
       sehri: "04:51",
+      fajr: "04:53",
       iftar: "18:09",
     },
     {
@@ -2733,6 +3119,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-17",
       date_display: "17 Mar 2026",
       sehri: "04:50",
+      fajr: "04:52",
       iftar: "18:09",
     },
     {
@@ -2740,6 +3127,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-18",
       date_display: "18 Mar 2026",
       sehri: "04:49",
+      fajr: "04:51",
       iftar: "18:10",
     },
     {
@@ -2747,6 +3135,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-19",
       date_display: "19 Mar 2026",
       sehri: "04:48",
+      fajr: "04:50",
       iftar: "18:10",
     },
     {
@@ -2754,6 +3143,7 @@ export const ramadan: RamadanDataType = {
       date_iso: "2026-03-20",
       date_display: "20 Mar 2026",
       sehri: "04:47",
+      fajr: "04:49",
       iftar: "18:10",
     },
   ],

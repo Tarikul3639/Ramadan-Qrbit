@@ -1,10 +1,16 @@
 "use client";
+import { useEffect, useState } from "react";
 
 interface IconProps {
   className?: string;
 }
 
 export const LanternIcon = ({ className }: IconProps) => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) return null; // render nothing on server
   return (
     <svg
       className={className}

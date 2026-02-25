@@ -8,6 +8,8 @@ import { Month } from "@/components/ui/Month";
 import { ArrowRight, BookOpenText } from "lucide-react";
 import { useRamadanData } from "@/hooks/useRamadanData";
 
+// TODO: Server and client issue from 'LanternIcon'
+
 export default function Home() {
   const district = "dhaka";
   const { days, today } = useRamadanData(district);
