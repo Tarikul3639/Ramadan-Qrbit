@@ -10,7 +10,7 @@ export interface DisplayDayType extends DayType {
 
 export function useRamadanData(district: string) {
   return useMemo(() => {
-    const districtData = data[district] || [];
+    const districtData = data[district] || data['dhaka'];
 
     const today = new Date();
     today.setHours(0, 0, 0, 0); // normalize

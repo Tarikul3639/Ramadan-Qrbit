@@ -3,57 +3,47 @@ import { MapPin, CircleCheck } from "lucide-react";
 import { DisplayDayType } from "@/hooks/useRamadanData";
 
 //Tabs
-import { motion, LayoutGroup } from "framer-motion";
-import { useState } from "react";
+import { motion } from "framer-motion";
+import { useState, useRef } from "react";
+import Tabs from "@/components/ui/Tabs";
 
-export default function Tabs() {
-  const [activeTab, setActiveTab] = useState("calendar");
+const formatTimeWithPeriod = (timeStr?: string) => {
+  if (!timeStr) return { time: "--:--", period: "" };
+  const [hour, minute] = timeStr.split(":").map(Number);
+  const date = new Date();
+  date.setHours(hour, minute, 0);
 
-  const tabs = [
-    { id: "calendar", label: "FULL CALENDAR" },
-    { id: "iftar", label: "SUHOOR & IFTAR" },
-    { id: "dua", label: "DUA RECITATION" },
-  ];
+  const options: Intl.DateTimeFormatOptions = {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: true,
+  };
 
-  return (
-    <LayoutGroup>
-      <div className="relative flex border-b border-primary/20 gap-8 mb-8">
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
-            className="relative flex flex-col items-center justify-center pb-2.5 pt-2 cursor-pointer"
-          >
-            <p
-              className={`text-[10px] sm:text-xs font-bold tracking-wider transition-colors ${
-                activeTab === tab.id
-                  ? "text-primary"
-                  : "text-slate-400 hover:text-slate-200"
-              }`}
-            >
-              {tab.label}
-            </p>
-
-            {/* Animated Underline */}
-            {activeTab === tab.id && (
-              <motion.div
-                layoutId="underline"
-                className="absolute -bottom-0.5 sm:-bottom-0.75 left-0 right-0 h-0.5 sm:h-0.75 bg-primary rounded-full"
-                transition={{ type: "spring", stiffness: 500, damping: 30 }}
-              />
-            )}
-          </button>
-        ))}
-      </div>
-    </LayoutGroup>
-  );
-}
+  const formatted = date.toLocaleTimeString("en-US", options); // "4:25 AM"
+  const [time, period] = formatted.split(" ");
+  // console.log(time, period);
+  return { time, period };
+};
 
 interface MonthType {
   days: DisplayDayType[];
 }
 
 export const Month = (days: MonthType) => {
+  const [activeTab, setActiveTab] = useState("full_calendar");
+  const tabs = [
+    { id: "full_calendar", label: "FULL CALENDAR" },
+    { id: "short_calender", label: "SUHOOR & IFTAR" },
+  ];
+  const todayRef = useRef<HTMLTableRowElement>(null);
+  // const [highlight, setHighlight] = useState(false);
+  const scrollToToday = () => {
+    if (todayRef.current) {
+      todayRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+      // setHighlight(true);
+      // setTimeout(() => setHighlight(false), 2000); // 2 seconds highlight
+    }
+  };
   return (
     <div className="w-full mx-auto mt-6 px-2 sm:px-4 relative group">
       <div className="relative flex flex-col w-full rounded-2xl border border-white/10 bg-white/2 backdrop-blur-2xl p-5 sm:p-8 shadow-sm">
@@ -74,7 +64,10 @@ export const Month = (days: MonthType) => {
             </p>
           </div>
           <div className="flex gap-2 sm:gap-4">
-            <button className="flex items-center gap-1.5 sm:gap-2 rounded-lg h-10 px-4 sm:px-6 bg-primary/10 border border-primary/30 text-primary text-[10px] sm:text-xs font-bold hover:bg-primary/20 transition-all active:scale-98">
+            <button
+              onClick={scrollToToday}
+              className="flex items-center gap-1.5 sm:gap-2 rounded-lg h-10 px-4 sm:px-6 bg-primary/10 border border-primary/30 text-primary text-[10px] sm:text-xs font-bold hover:bg-primary/20 transition-all active:scale-98"
+            >
               <MapPin className="size-3 sm:size-3" />
               Jump to Today
             </button>
@@ -82,133 +75,148 @@ export const Month = (days: MonthType) => {
         </header>
 
         {/* Tabs */}
-        <Tabs />
+        <Tabs activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
 
         {/* Calender */}
-        <div className="w-full rounded-xl overflow-hidden border border-primary/30">
-          <table className="w-full text-left">
+        <div className="w-full overflow-x-auto rounded-xl border border-primary/30">
+          <table
+            className={`${activeTab == "short_calender" ? "min-w-60" : "min-w-120"} w-full text-center`}
+          >
             <thead>
               <tr className="bg-primary/10">
-                <th className="px-6 py-5 text-primary text-xs font-bold uppercase tracking-widest border-b border-primary/20">
+                <th className="px-2 sm:px-4 py-3 sm:py-5 text-primary text-[10px] sm:text-xs font-bold uppercase tracking-widest border-b border-primary/20">
                   Ramadan
                 </th>
-                <th className="px-6 py-5 text-primary text-xs font-bold uppercase tracking-widest border-b border-primary/20">
+                <th
+                  className={`${activeTab == "short_calender" && "hidden"} px-2 sm:px-4 py-3 sm:py-5 text-primary text-[10px] sm:text-xs font-bold uppercase tracking-widest border-b border-primary/20`}
+                >
                   Date
                 </th>
-                <th className="px-6 py-5 text-primary text-xs font-bold uppercase tracking-widest border-b border-primary/20">
+                <th className="table-cell px-2 sm:px-4 py-3 sm:py-5 text-primary text-[10px] sm:text-xs font-bold uppercase tracking-widest border-b border-primary/20">
                   Suhoor (Sehri)
                 </th>
-                <th className="px-6 py-5 text-primary text-xs font-bold uppercase tracking-widest border-b border-primary/20">
+                <th
+                  className={
+                    activeTab == "short_calender"
+                      ? "hidden"
+                      : "table-cell px-2 sm:px-4 py-3 sm:py-5 text-primary text-[10px] sm:text-xs font-bold uppercase tracking-widest border-b border-primary/20"
+                  }
+                >
+                  Fajr (Fajr)
+                </th>
+                <th className="table-cell px-2 sm:px-4 py-3 sm:py-5 text-primary text-[10px] sm:text-xs font-bold uppercase tracking-widest border-b border-primary/20">
                   Iftar (Maghrib)
                 </th>
-                <th className="px-6 py-5 text-primary text-xs font-bold uppercase tracking-widest border-b border-primary/20 text-center">
+                <th
+                  className={`${activeTab == "short_calender" && "hidden"} px-2 sm:px-4 py-3 sm:py-5 text-primary text-[10px] sm:text-xs font-bold uppercase tracking-widest border-b border-primary/20`}
+                >
                   Status
                 </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-primary/10">
-              {/* <!-- Row: Past --> */}
-              <tr className="hover:bg-primary/5 transition-colors group">
-                <td className="px-6 py-6 text-slate-400 text-sm font-medium">
-                  Day 1
-                </td>
-                <td className="px-6 py-6 text-slate-400 text-sm">
-                  March 11, 2024
-                </td>
-                <td className="px-6 py-6 text-slate-400 text-sm font-mono">
-                  05:12 AM
-                </td>
-                <td className="px-6 py-6 text-slate-400 text-sm font-mono">
-                  06:45 PM
-                </td>
-                <td className="px-6 py-6 text-center">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800 text-slate-500 text-[10px] font-semibold uppercase tracking-wider">
-                    <CircleCheck className="size-2 sm:size-3" />
-                    Done
-                  </span>
-                </td>
-              </tr>
-              {/* <!-- Row: Active (Current Day) --> */}
-              <tr className="bg-primary/20 ring-1 ring-inset ring-primary/50 relative overflow-hidden group">
-                <td className="px-6 py-8 text-slate-100 text-base font-bold">
-                  Day 2
-                  <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
-                </td>
-                <td className="px-6 py-8 text-slate-100 text-base font-medium">
-                  March 12, 2024
-                </td>
-                <td className="px-6 py-8 text-primary text-lg font-bold font-mono">
-                  05:10 AM
-                </td>
-                <td className="px-6 py-8 text-primary text-lg font-bold font-mono">
-                  06:46 PM
-                </td>
-                <td className="px-6 py-8 text-center">
-                  <span className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-background-dark text-xs font-black uppercase tracking-widest animate-pulse">
-                    Today
-                  </span>
-                </td>
-              </tr>
-              {/* <!-- Row: Upcoming --> */}
-              <tr className="hover:bg-primary/5 transition-colors group">
-                <td className="px-6 py-6 text-slate-300 text-sm font-medium">
-                  Day 3
-                </td>
-                <td className="px-6 py-6 text-slate-300 text-sm">
-                  March 13, 2024
-                </td>
-                <td className="px-6 py-6 text-slate-300 text-sm font-mono">
-                  05:08 AM
-                </td>
-                <td className="px-6 py-6 text-primary text-sm font-mono">
-                  06:47 PM
-                </td>
-                <td className="px-6 py-6 text-center">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
-                    Soon
-                  </span>
-                </td>
-              </tr>
-              {/* <!-- Row: Upcoming --> */}
-              <tr className="hover:bg-primary/5 transition-colors group">
-                <td className="px-6 py-6 text-slate-300 text-sm font-medium">
-                  Day 4
-                </td>
-                <td className="px-6 py-6 text-slate-300 text-sm">
-                  March 14, 2024
-                </td>
-                <td className="px-6 py-6 text-slate-300 text-sm font-mono">
-                  05:07 AM
-                </td>
-                <td className="px-6 py-6 text-primary text-sm font-mono">
-                  06:48 PM
-                </td>
-                <td className="px-6 py-6 text-center">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
-                    Soon
-                  </span>
-                </td>
-              </tr>
-              {/* <!-- Row: Upcoming --> */}
-              <tr className="hover:bg-primary/5 transition-colors group">
-                <td className="px-6 py-6 text-slate-300 text-sm font-medium">
-                  Day 5
-                </td>
-                <td className="px-6 py-6 text-slate-300 text-sm">
-                  March 15, 2024
-                </td>
-                <td className="px-6 py-6 text-slate-300 text-sm font-mono">
-                  05:05 AM
-                </td>
-                <td className="px-6 py-6 text-primary text-sm font-mono">
-                  06:49 PM
-                </td>
-                <td className="px-6 py-6 text-center">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
-                    Soon
-                  </span>
-                </td>
-              </tr>
+              {days.days.map((d, index) => {
+                const isToday =
+                  new Date().toDateString() ===
+                  new Date(d.date_iso).toDateString();
+                const status = d.status;
+
+                return (
+                  <motion.tr
+                    key={index}
+                    ref={isToday ? todayRef : null}
+                    className={`transition-colors duration-200 hover:bg-primary/5 ${
+                      isToday ? "bg-primary/10" : ""
+                    }`}
+                  >
+                    {/* Day Column */}
+                    <td className="px-2 sm:px-4 py-2 sm:py-3">
+                      <span
+                        className={`style-font text-[10px] sm:text-xs ${isToday ? "text-primary" : "text-white/40"}`}
+                      >
+                        {String(d.day).padStart(2, "0")}
+                      </span>
+                    </td>
+
+                    {/* Date Column */}
+                    <td
+                      className={`${activeTab == "short_calender" && "hidden"} px-2 sm:px-4 py-2 sm:py-3`}
+                    >
+                      <div className="flex flex-col">
+                        <span className="style-font text-[10px] sm:text-sm font-medium text-white/90">
+                          {new Date(d.date_iso).toLocaleDateString("en-GB", {
+                            day: "numeric",
+                            month: "short",
+                          })}
+                        </span>
+                        <span className="text-[10px] sm:text-xs text-white/50 tracking-[1.1] pt-1">
+                          {new Date(d.date_iso).toLocaleDateString("en-GB", {
+                            weekday: "long",
+                          })}
+                        </span>
+                      </div>
+                    </td>
+
+                    {/* Sehri Column */}
+                    <td className="table-cell px-2 sm:px-4 py-2 sm:py-3">
+                      <span className="style-font text-[10px] sm:text-sm font-semibold text-white/80 tracking-wider">
+                        {d.sehri}{" "}
+                        <span className="text-[8px] sm:text-[10px] text-primary/60">
+                          {formatTimeWithPeriod(d?.sehri).period}
+                        </span>
+                      </span>
+                    </td>
+
+                    {/* Fajr Column */}
+                    <td
+                      className={
+                        activeTab == "short_calender"
+                          ? "hidden"
+                          : "table-cell px-2 sm:px-4 py-2 sm:py-3"
+                      }
+                    >
+                      <span className="style-font text-[10px] sm:text-sm font-semibold text-white/80 tracking-wider">
+                        {d.fajr}{" "}
+                        <span className="text-[8px] sm:text-[10px] text-primary/60">
+                          {formatTimeWithPeriod(d?.fajr).period}
+                        </span>
+                      </span>
+                    </td>
+
+                    {/* Iftar Column */}
+                    <td className="table-cell px-2 sm:px-4 py-2 sm:py-3">
+                      <span className="style-font text-[10px] sm:text-sm font-semibold text-primary tracking-wider">
+                        {formatTimeWithPeriod(d?.iftar).time}{" "}
+                        <span className="text-[8px] sm:text-[10px] opacity-60">
+                          {formatTimeWithPeriod(d?.iftar).period}
+                        </span>
+                      </span>
+                    </td>
+
+                    {/* Status Column */}
+                    <td
+                      className={`${activeTab == "short_calender" && "hidden"} px-2 sm:px-4 py-2 sm:py-3 `}
+                    >
+                      {status === "past" && (
+                        <span className="inline-flex items-center gap-1 px-2 sm:px-3 py-1 rounded-full bg-slate-800 text-slate-500 text-[8px] sm:text-[10px] font-semibold uppercase tracking-wider">
+                          <CircleCheck className="size-2 sm:size-3" />
+                          <span className="pt-0.5">Done</span>
+                        </span>
+                      )}
+                      {status === "today" && (
+                        <span className="inline-flex items-center gap-1 px-2 sm:px-4 py-1 rounded-full bg-primary text-background-dark text-[10px] sm:text-[11px] font-semibold uppercase tracking-widest animate-pulse text-center pb-px">
+                          Today
+                        </span>
+                      )}
+                      {(status === "upcoming" || status === "tomorrow") && (
+                        <span className="inline-flex items-center gap-1 px-2 sm:px-3 py-1 rounded-full bg-primary/10 text-primary text-[8px] sm:text-[10px] font-bold uppercase tracking-wider">
+                          Soon
+                        </span>
+                      )}
+                    </td>
+                  </motion.tr>
+                );
+              })}
             </tbody>
           </table>
         </div>

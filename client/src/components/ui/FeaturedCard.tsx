@@ -3,6 +3,7 @@
 import { BookOpenText, ArrowRight } from "lucide-react";
 
 interface FeaturedCardProps {
+  duaArabic?: string;
   duaText?: string;
   duaTrans?: string;
   currentPhase?: string;
@@ -10,6 +11,7 @@ interface FeaturedCardProps {
 }
 
 export const FeaturedCard = ({
+  duaArabic = "اللَّهُمَّ لَكَ صُمْتُ وَبِكَ آمَنْتُ وَعَلَىٰ رِزْقِكَ أَفْطَرْتُ",
   duaText = "Allahumma laka sumtu wa bika aamantu wa 'ala rizqika aftartu.",
   duaTrans = "O Allah! I fasted for You and I believe in You and I break my fast with Your sustenance.",
   currentPhase = "Fasting in Progress",
@@ -24,9 +26,22 @@ export const FeaturedCard = ({
             <div className="p-2 rounded-lg bg-primary/10 text-primary">
               <BookOpenText className="size-4 sm:size-5" />
             </div>
-            <h3 className="text-slate-100 font-bold text-lg">Daily Dua (Iftar)</h3>
+            <h3 className="text-slate-100 font-bold text-lg">
+              Daily Dua (Iftar)
+            </h3>
           </div>
-          <p className="text-slate-300 italic text-base leading-relaxed">{duaText}</p>
+
+          {/* Arabic */}
+          <p className="text-white text-xl sm:text-2xl leading-loose font-semibold text-right font-[Amiri]">
+            {duaArabic}
+          </p>
+
+          {/* Transliteration */}
+          <p className="text-slate-300 italic text-base leading-relaxed">
+            {duaText}
+          </p>
+
+          {/* Translation */}
           <p className="text-primary/60 text-sm italic">{duaTrans}</p>
         </div>
 
@@ -37,9 +52,15 @@ export const FeaturedCard = ({
               Current Phase
             </p>
             <h3 className="text-2xl font-black">{currentPhase}</h3>
-            <p className="text-sm font-medium mt-1">Next prayer: {nextPrayer}</p>
+            <p className="text-sm font-medium mt-1">
+              Next prayer: {nextPrayer}
+            </p>
           </div>
-          <button className="flex items-center gap-2 rounded-lg h-10 px-6 bg-secondary text-primary text-sm font-bold shadow-lg hover:opacity-90 transition-all">
+
+          <button
+            onClick={() => alert("This feature not available")}
+            className="flex items-center gap-2 rounded-lg h-10 px-6 bg-secondary text-primary text-sm font-bold shadow-lg hover:opacity-90 transition-all"
+          >
             View Prayer Times
             <ArrowRight className="size-3 sm:size-4" />
           </button>
