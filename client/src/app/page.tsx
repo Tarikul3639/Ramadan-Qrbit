@@ -1,5 +1,6 @@
 "use client";
 
+import Lottie from "lottie-react";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/footer/Footer";
 import { OrbitCountdown } from "@/components/ui/OrbitCountdown";
@@ -9,6 +10,8 @@ import { FeaturedCard } from "@/components/ui/FeaturedCard";
 import { useRamadanData } from "@/hooks/useRamadanData";
 import { useDistrictFromLocation } from "@/hooks/useDistrictFromLocation";
 import LocationLoader from "@/components/ui/LocationLoader";
+import animationData from "@/Public/animations/Ramadan-Top.json";
+import Dialog from "@/components/ui/Dialog";
 
 export default function Home() {
   const {
@@ -29,9 +32,21 @@ export default function Home() {
   const { days, today, tomorrow } = useRamadanData(districtKey);
 
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="flex min-h-screen overflow-hidden flex-col items-center">
       {/* Background */}
       <div className="fixed inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2280%22%20height%3D%2280%22%20viewBox%3D%220%200%2080%2080%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%27M40%200l20%2020-20%2020-20-20L40%200zm0%2080l20-20-20-20-20%2020%2020%2080zM0%2040l20-20%2020%2020-20%2020L0%2040zm80%2040l-20-15-20%2015%2020%2015%2020-15z%27%20fill%3D%27%23D4AF37%27%20fill-opacity%3D%270.02%27%20fill-rule%3D%27evenodd%27/%3E%3C/svg%3E')] bg-no-repeat bg-center bg-cover pointer-events-none" />
+
+      <div className="absolute top-20 opacity-100 pointer-events-none">
+        <Lottie
+          loop={false}
+          animationData={animationData}
+          style={{ width: "100%" }}
+          className="w-full h-full"
+        />
+      </div>
+
+      {/* Dialog */}
+      <Dialog />
 
       <div className="w-full mx-auto max-w-5xl">
         <Navbar />

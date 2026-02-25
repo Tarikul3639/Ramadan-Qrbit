@@ -15,7 +15,7 @@ interface TabsType {
 export default function Tabs({ activeTab, setActiveTab, tabs }: TabsType) {
   return (
     <LayoutGroup>
-      <div className="relative flex border-b border-primary/20 gap-8 mb-8">
+      <div className="relative flex border-b border-primary/20 gap-8">
         {tabs.map((tab) => (
           <button
             key={tab.id}

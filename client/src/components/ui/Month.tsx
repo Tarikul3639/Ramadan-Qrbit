@@ -46,43 +46,45 @@ export const Month = (days: MonthType) => {
   };
   return (
     <div className="w-full mx-auto mt-6 px-2 sm:px-4 relative group">
-      <div className="relative flex flex-col w-full rounded-2xl border border-white/10 bg-white/2 backdrop-blur-2xl p-5 sm:p-8 shadow-sm">
-        {/* Header */}
-        <header className="flex flex-wrap justify-between items-end gap-6 mb-8">
-          <div className="flex flex-col gap-2">
-            <div className="flex items-center gap-1.5 sm:gap-2 text-primary">
-              <MapPin className="size-3 sm:size-3.5 mb-0.5" />
-              <span className="text-[10px] sm:text-xs font-semibold uppercase tracking-widest">
-                London, United Kingdom
-              </span>
+      <div className="relative flex flex-col w-full rounded-2xl border border-white/10 bg-white/2 backdrop-blur-2xl p-2 sm:p-8 shadow-sm">
+        <div className="p-3 sm:pb-6">
+          {/* Header */}
+          <header className="flex flex-wrap justify-between items-end gap-6 mb-8">
+            <div className="flex flex-col gap-2">
+              <div className="flex items-center gap-1.5 sm:gap-2 text-primary">
+                <MapPin className="size-3 sm:size-3.5 mb-0.5" />
+                <span className="text-[10px] sm:text-xs font-semibold uppercase tracking-widest">
+                  London, United Kingdom
+                </span>
+              </div>
+              <h1 className="text-slate-100 text-lg md:text-2xl font-black leading-tight">
+                Ramadan 1445 AH Schedule
+              </h1>
+              <p className="text-primary/70 text-xs sm:text-sm font-serif">
+                Spiritual timings and daily fast tracker for your city.
+              </p>
             </div>
-            <h1 className="text-slate-100 text-lg md:text-2xl font-black leading-tight">
-              Ramadan 1445 AH Schedule
-            </h1>
-            <p className="text-primary/70 text-xs sm:text-sm font-serif">
-              Spiritual timings and daily fast tracker for your city.
-            </p>
-          </div>
-          <div className="flex gap-2 sm:gap-4">
-            <button
-              onClick={scrollToToday}
-              className="flex items-center gap-1.5 sm:gap-2 rounded-lg h-10 px-4 sm:px-6 bg-primary/10 border border-primary/30 text-primary text-[10px] sm:text-xs font-bold hover:bg-primary/20 transition-all active:scale-98"
-            >
-              <MapPin className="size-3 sm:size-3" />
-              Jump to Today
-            </button>
-          </div>
-        </header>
+            <div className="flex gap-2 sm:gap-4">
+              <button
+                onClick={scrollToToday}
+                className="flex items-center gap-1.5 sm:gap-2 rounded-lg h-10 px-4 sm:px-6 bg-primary/10 border border-primary/30 text-primary text-[10px] sm:text-xs font-bold hover:bg-primary/20 transition-all active:scale-98"
+              >
+                <MapPin className="size-3 sm:size-3" />
+                Jump to Today
+              </button>
+            </div>
+          </header>
 
-        {/* Tabs */}
-        <Tabs activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
+          {/* Tabs */}
+          <Tabs activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
+        </div>
 
         {/* Calender */}
-        <div className="w-full overflow-x-auto rounded-xl border border-primary/30">
+        <div className="w-full max-h-100 overflow-y-auto overflow-x-auto rounded-xl border border-primary/30">
           <table
             className={`${activeTab == "short_calender" ? "min-w-60" : "min-w-120"} w-full text-center`}
           >
-            <thead>
+            <thead className="sticky top-0 z-20 bg-background">
               <tr className="bg-primary/10">
                 <th className="px-2 sm:px-4 py-3 sm:py-5 text-primary text-[10px] sm:text-xs font-bold uppercase tracking-widest border-b border-primary/20">
                   Ramadan
