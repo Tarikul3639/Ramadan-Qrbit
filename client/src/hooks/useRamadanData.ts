@@ -5,34 +5,41 @@ import { DayType } from "@/types/RamadanData";
 import { useMemo } from "react";
 
 export interface DisplayDayType extends DayType {
-  status: "past" | "today" | "upcoming";
+  status: "past" | "today" | "tomorrow" | "upcoming";
 }
 
 export function useRamadanData(district: string) {
   return useMemo(() => {
     const districtData = data[district] || [];
-    const today = new Date();
-    const todayISO =
-      today.getFullYear() +
-      "-" +
-      String(today.getMonth() + 1).padStart(2, "0") +
-      "-" +
-      String(today.getDate()).padStart(2, "0");
 
-    // console.log(todayISO);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // normalize
+
+    const tomorrow = new Date(today);
+    tomorrow.setDate(today.getDate() + 1);
 
     const enrichedData: DisplayDayType[] = districtData.map((item) => {
-      let status: "past" | "today" | "upcoming" = "upcoming";
+      const itemDate = new Date(item.date_iso);
+      itemDate.setHours(0, 0, 0, 0);
 
-      if (item.date_iso < todayISO) status = "past";
-      if (item.date_iso === todayISO) status = "today";
+      let status: DisplayDayType["status"] = "upcoming";
+
+      if (itemDate < today) status = "past";
+      else if (itemDate.getTime() === today.getTime()) status = "today";
+      else if (itemDate.getTime() === tomorrow.getTime()) status = "tomorrow";
 
       return { ...item, status };
     });
 
+    const todayData = enrichedData.find((d) => d.status === "today") ?? null;
+
+    const tomorrowData =
+      enrichedData.find((d) => d.status === "tomorrow") ?? null;
+
     return {
       days: enrichedData,
-      today: enrichedData.find((d) => d.status == "today") || null,
+      today: todayData,
+      tomorrow: tomorrowData,
     };
-  }, [data]);
+  }, [district]);
 }

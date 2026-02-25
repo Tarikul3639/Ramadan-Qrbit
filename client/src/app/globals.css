@@ -6,15 +6,15 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  --color-primary: #D4AF37;
+  --color-primary: #d4af37;
   /* --color-primary-hover: #0070f3; */
-  --color-secondary: #02413A;
+  --color-secondary: #02413a;
   /* --color-secondary-hover: #888888; */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #02413A;
+    --background: #02413a;
     --foreground: #ededed;
   }
 }
@@ -23,4 +23,30 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Loader Component */
+@layer utilities {
+  .animate-progress-loading {
+    animation: progress-loading 1.5s infinite ease-in-out;
+  }
+
+  @keyframes progress-loading {
+    0% {
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+    45% {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+    50% {
+      transform: scaleX(1);
+      transform-origin: right;
+    }
+    100% {
+      transform: scaleX(0);
+      transform-origin: right;
+    }
+  }
 }

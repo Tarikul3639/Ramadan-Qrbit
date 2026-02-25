@@ -50,9 +50,17 @@ const calculateCountdown = (
 
 interface TodayProps {
   today: DisplayDayType | null;
+  tomorrow: DisplayDayType | null;
+  country_code: string | null;
+  state_district: string | null;
 }
 
-export const OrbitCountdown = ({ today }: TodayProps) => {
+export const OrbitCountdown = ({
+  today,
+  tomorrow,
+  state_district,
+  country_code,
+}: TodayProps) => {
   const [countdown, setCountdown] = useState({
     hours: "--",
     minutes: "--",
@@ -60,6 +68,8 @@ export const OrbitCountdown = ({ today }: TodayProps) => {
     progress: 0,
     message: "Wait..",
   });
+
+  // console.log(today);
 
   const radius = 47;
   const circumference = 2 * Math.PI * radius; // ~295
@@ -73,41 +83,53 @@ export const OrbitCountdown = ({ today }: TodayProps) => {
       const now = new Date();
       const nowMs = now.getTime();
 
-      // Parse Sehri
+      // ---- TODAY TIMES ----
+
+      // Sehri
       const [sehriHour, sehriMinute] = today.sehri.split(":").map(Number);
       const sehriDate = new Date();
       sehriDate.setHours(sehriHour, sehriMinute, 0, 0);
       const sehriTimeMs = sehriDate.getTime();
 
-      // Parse Fajr
+      // Fajr
       const [fajrHour, fajrMinute] = today.fajr.split(":").map(Number);
       const fajrDate = new Date();
       fajrDate.setHours(fajrHour, fajrMinute, 0, 0);
       const fajrTimeMs = fajrDate.getTime();
 
-      // Parse Iftar
+      // Iftar
       const [iftarHour, iftarMinute] = today.iftar.split(":").map(Number);
       const iftarDate = new Date();
       iftarDate.setHours(iftarHour, iftarMinute, 0, 0);
       const iftarTimeMs = iftarDate.getTime();
 
-      // Determine countdown
+      // ---- LOGIC ----
+
+      // Before Sehri (after midnight but before Sehri)
       if (nowMs < sehriTimeMs) {
         setCountdown(
           calculateCountdown("00:00", today.sehri, "Time Until Sehri"),
         );
-      } else if (nowMs >= sehriTimeMs && nowMs < fajrTimeMs) {
+      }
+
+      // Between Sehri and Fajr
+      else if (nowMs >= sehriTimeMs && nowMs < fajrTimeMs) {
         setCountdown(
           calculateCountdown(today.sehri, today.fajr, "Time Until Fajr"),
         );
-      } else if (nowMs >= fajrTimeMs && nowMs < iftarTimeMs) {
+      }
+
+      // Between Fajr and Iftar
+      else if (nowMs >= fajrTimeMs && nowMs < iftarTimeMs) {
         setCountdown(
           calculateCountdown(today.fajr, today.iftar, "Time Until Iftar"),
         );
-      } else {
-        // After Iftar, countdown till next day's Sehri
+      }
+
+      // After Iftar → Use Tomorrow Sehri
+      else if (tomorrow) {
         setCountdown(
-          calculateCountdown("00:00", today.sehri, "Time Until Sehri"),
+          calculateCountdown(today.iftar, tomorrow.sehri, "Time Until Sehri"),
         );
       }
     };
@@ -115,7 +137,7 @@ export const OrbitCountdown = ({ today }: TodayProps) => {
     update();
     const interval = setInterval(update, 1000);
     return () => clearInterval(interval);
-  }, [today]);
+  }, [today, tomorrow]);
 
   const { hours, minutes, seconds, message, progress } = countdown;
 
@@ -143,7 +165,7 @@ export const OrbitCountdown = ({ today }: TodayProps) => {
 
         {/* Progress Circle (Garis Kuning) */}
         <circle
-          className="text-primary transition-all duration-1000 ease-linear animate-pulse-gold"
+          className="text-primary transition-all duration-1000 ease-linear animate-pulse-gold z-10"
           cx="50"
           cy="50"
           r={radius}
@@ -224,7 +246,7 @@ export const OrbitCountdown = ({ today }: TodayProps) => {
           <div className="flex items-center gap-1 sm:gap-1.5 px-2.5 py-1 rounded-full bg-black/20 backdrop-blur-md border border-white/5">
             <MapPin size={8} className="text-primary sm:w-3 sm:h-3" />
             <span className="text-[6px] sm:text-[8px] tracking-widest text-slate-300 uppercase font-semibold whitespace-nowrap">
-              Dubai • UAE
+              {state_district} • {country_code}
             </span>
           </div>
         </div>
