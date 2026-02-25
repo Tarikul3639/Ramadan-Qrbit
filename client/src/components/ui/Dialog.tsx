@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Loader } from "lucide-react";
 
 import img_1 from "@/assets/ramadan_1.jpg";
 import img_2 from "@/assets/ramadan_2.jpg";
@@ -17,15 +17,23 @@ const RamadanDialog = () => {
   const [fullscreenIndex, setFullscreenIndex] = useState<number | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // State to track loading for each image index
+  const [loadedImages, setLoadedImages] = useState<{ [key: number]: boolean }>(
+    {},
+  );
+
   useEffect(() => {
     const isClosedToday = localStorage.getItem("ramadanDialogClosed");
-    const today = new Date().toDateString(); // e.g., "Tue Feb 25 2026"
+    const today = new Date().toDateString();
 
     if (isClosedToday !== today) {
-      const timer = setTimeout(() => setOpen(true), 1000); // 1s por open
+      const timer = setTimeout(() => setOpen(true), 1000);
       return () => clearTimeout(timer);
     }
   }, []);
+  const handleImageLoad = (index: number) => {
+    setLoadedImages((prev) => ({ ...prev, [index]: true }));
+  };
 
   const nextSlide = () =>
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
@@ -33,11 +41,12 @@ const RamadanDialog = () => {
   const prevSlide = () =>
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
 
+  const isCurrentLoading = !loadedImages[currentIndex];
+
   return (
     <AnimatePresence>
       {open && (
         <div className="fixed inset-0 z-100 flex items-center justify-center p-4">
-          {/* Backdrop with Secondary Blur */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -46,14 +55,12 @@ const RamadanDialog = () => {
             className="absolute inset-0 bg-secondary/50"
           />
 
-          {/* Modal Container */}
           <motion.div
             initial={{ scale: 0.9, opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.9, opacity: 0, y: 20 }}
             className="relative w-full max-w-lg max-h-150 overflow-hidden rounded-4xl border border-white/10 bg-secondary shadow-2xl"
           >
-            {/* Close Button - Premium Glass Style */}
             <button
               onClick={() => {
                 setOpen(false);
@@ -68,7 +75,14 @@ const RamadanDialog = () => {
             </button>
 
             {/* Slider Section */}
-            <div className="relative h-80 w-full overflow-hidden">
+            <div className="relative h-80 w-full overflow-hidden bg-white/2">
+              {/* Image Loader Spinner */}
+              {isCurrentLoading && (
+                <div className="absolute inset-0 z-10 flex items-center justify-center">
+                  <Loader className="h-8 w-8 animate-spin text-primary opacity-40" />
+                </div>
+              )}
+
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentIndex}
@@ -84,36 +98,33 @@ const RamadanDialog = () => {
                     alt={`Ramadan Dua ${currentIndex + 1}`}
                     fill
                     priority
-                    className="object-cover rounded-t-4xl"
+                    onLoad={() => handleImageLoad(currentIndex)}
+                    className={`object-cover rounded-t-4xl transition-opacity duration-500 ${isCurrentLoading ? "opacity-0" : "opacity-100"}`}
                   />
                 </motion.div>
               </AnimatePresence>
 
-              <AnimatePresence>
-                {fullscreenIndex !== null && (
-                  <motion.div
-                    key="fullscreen"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
-                    onClick={() => setFullscreenIndex(null)}
-                  >
-                    <Image
-                      src={images[fullscreenIndex]}
-                      alt={`Full View ${fullscreenIndex + 1}`}
-                      width={1920}
-                      height={1080}
-                      className="max-h-screen max-w-screen object-contain"
-                    />
-                  </motion.div>
-                )}
-              </AnimatePresence>
+              {fullscreenIndex !== null && (
+                <motion.div
+                  key="fullscreen"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
+                  onClick={() => setFullscreenIndex(null)}
+                >
+                  <Image
+                    src={images[fullscreenIndex]}
+                    alt={`Full View ${fullscreenIndex + 1}`}
+                    width={1920}
+                    height={1080}
+                    className="max-h-screen max-w-screen object-contain"
+                  />
+                </motion.div>
+              )}
 
-              {/* Bottom Fade for Text Contrast */}
               <div className="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-secondary to-transparent pointer-events-none" />
 
-              {/* Navigation Controls */}
               <div className="absolute inset-x-4 top-1/2 flex -translate-y-1/2 justify-between px-2">
                 <button
                   onClick={prevSlide}
@@ -136,7 +147,6 @@ const RamadanDialog = () => {
                 Daily <span className="text-white">Dua</span>
               </h3>
 
-              {/* Modern Pagination Dots */}
               <div className="mt-5 flex justify-center gap-2.5">
                 {images.map((_, i) => (
                   <button
